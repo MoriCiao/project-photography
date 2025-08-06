@@ -4,6 +4,11 @@ const Theme_IV_v = () => {
   return (
     <section className="theme_IV_item">
       {/* （S / Tv – Shutter Priority） */}
+      <span
+        id="theme_IV_v"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
+
       <h3>快門先決模式（S / Tv – Shutter Priority）</h3>
       <p>你控制快門速度，相機自動配合光圈。</p>
       <div>

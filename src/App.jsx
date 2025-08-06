@@ -11,18 +11,18 @@ import GoTop from "./components/GoTop";
 
 const App = () => {
   return (
-    <div className="App w-full max-w-screen overflow-x-hidden tracking-widest relative">
+    <div className="App w-full max-w-screen  tracking-widest relative">
       <GoTop />
       <header className="header ">
         <Header />
       </header>
-      <main className="main w-screen h-auto">
+      <main className="main w-[100%]">
         <Theme_I />
 
         <Theme_II />
-        {/* <Theme_III />
+        <Theme_III />
         <Theme_IV />
-        <Theme_V /> */}
+        {/* <Theme_V /> */}
       </main>
     </div>
   );

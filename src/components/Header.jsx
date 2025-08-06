@@ -31,6 +31,7 @@ const Header = () => {
         <Hero />
         <blockquote className="text-[2.5rem] font-thin absolute z-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           <p className=""> “A picture is worth a thousand words.” </p>
+          <p className="text-[1.5rem] text-end">一張照片勝過千言萬語。</p>
           <footer className="text-lg text-end">
             —<cite>Fred R. Barnard</cite>{" "}
           </footer>

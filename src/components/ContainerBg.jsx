@@ -5,7 +5,7 @@ const ContainerBg = ({ src, alt, className }) => {
     <img
       src={src}
       alt={alt}
-      className={`theme-bg ${className}`}
+      className={`transition-transform duration-700 ${className} `}
       loading="lazy"
       draggable="false"
     />

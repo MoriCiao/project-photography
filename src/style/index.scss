@@ -3,6 +3,8 @@
 @import '_theme_I.scss';
 @import '_theme_ii.scss';
 @import '_theme_III.scss';
+@import '_theme_iv.scss';
+
 
 html,body{
     scroll-behavior: smooth;
@@ -31,18 +33,13 @@ html,body{
             
         }
         section{
-            padding: 2rem;
+            padding: 2.5rem;
+            height: 100%;
         }
+        
     }
-    .themeIV,.themeV{
-        display: grid;
-       grid-template-columns: repeat(3,1fr);
-       gap: 2rem;
-       section{
-            
-            padding: 0rem;
-       }
-    }
+    
+    
     
 }
 

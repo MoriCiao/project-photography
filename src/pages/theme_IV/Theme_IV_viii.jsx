@@ -3,6 +3,10 @@ import React from "react";
 const Theme_IV_viii = () => {
   return (
     <section className="theme_IV_item">
+      <span
+        id="theme_IV_viii"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
       {/* （SCN / Scene） */}
       <h3>場景模式（SCN / Scene）</h3>
       <p>相機根據場景自動套用合適的組合設定（如人像、夜景、運動、風景等）。</p>

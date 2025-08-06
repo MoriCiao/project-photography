@@ -2,7 +2,6 @@ import React from "react";
 import ContainerBg from "../../components/containerBg";
 
 const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
-  console.log(isToggle.theme_II_ii);
   return (
     <section
       id="Theme_II_ii"
@@ -14,20 +13,35 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
       onClick={() => handleToggle("theme_II_ii")}
     >
       {/* 什麼是白平衡？ */}
-      {/* <ContainerBg
+      <ContainerBg
+        src={"/project-photography/items-bg.webp"}
+        alt={"theme_II背景"}
+        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
+          isToggle.theme_II_ii ? "brightness-30 " : "brightness-60 "
+        } opacity-100 `}
+      />
+      <ContainerBg
         src={"/project-photography/theme_II_ii.webp"}
         alt={"theme_II背景"}
-        className={
-          " transition duration-500 -translate-y-0 brightness-100 hover:opacity-10 "
-        }
-      /> */}
+        className={`${
+          isToggle.theme_II_ii ? "block p-4 max-w-200" : "hidden p-0 w-[100%]"
+        }   absolute top-0 right-0  h-full border border-black  transition-all duration-1000 -translate-y-0`}
+      />
+      <div
+        className={`${
+          isToggle.theme_II_ii
+            ? "bg-gradient-to-r from-black/20 via-black/50 to-black/0"
+            : ""
+        } absolute  top-0 right-0  w-[100%] h-[100%] transition duration-1500`}
+      ></div>
+
       <div className="flex flex-col gap-4">
         <h3>什麼是白平衡？</h3>
 
         <ul
           className={`${
             isToggle.theme_II_ii
-              ? "opacity-100 h-auto text-[1.25rem]"
+              ? "opacity-100 h-auto text-[1rem]"
               : "opacity-0 h-30"
           } flex flex-col gap-4 transition-all duration-500`}
         >

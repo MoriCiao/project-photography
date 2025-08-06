@@ -8,13 +8,13 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
       className={`theme_II_item theme_II_iii`}
       onClick={() => handleToggle("theme_II_iii")}
     >
-      {/* <ContainerBg
-        src={"/project-photography/theme_II_iii.webp"}
+      <ContainerBg
+        src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
-        className={
-          "transition duration-500 -translate-y-0 brightness-60 opacity-100 "
-        }
-      /> */}
+        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
+          isToggle.theme_II_iii ? "brightness-30 " : "brightness-60 "
+        } opacity-100 `}
+      />
       {/*  常見白平衡模式 */}
       <div className="theme_context">
         <h3>常見白平衡模式</h3>
@@ -22,9 +22,9 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
         <div
           className={`${
             isToggle.theme_II_iii
-              ? "opacity-100   h-150 -translate-x-0 "
+              ? "delay-300 opacity-100  max-h-100 -translate-x-0 text-[1rem] "
               : "opacity-0  w-0 h-30 -translate-x-10"
-          } transition-all duration-500 overflow-hidden flex flex-col items-center`}
+          } transition-all duration-1000 overflow-hidden flex flex-col items-center overflow-y-auto`}
         >
           <table>
             <thead>
@@ -36,31 +36,31 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
               </tr>
             </thead>
             <tbody>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>自動白平衡（AWB）</td>
                 <td> 相機自動判斷</td>
                 <td>多數情境</td>
                 <td>中性</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>日光（Daylight）</td>
                 <td>約 5200K</td>
                 <td>室外晴天</td>
                 <td>微暖色</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>陰天（Cloudy） </td>
                 <td>約 6000–6500K</td>
                 <td>陰天、黃昏</td>
                 <td>增加暖色</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>白熾燈（Tungsten）</td>
                 <td>約 3000K</td>
                 <td>室內燈泡光源</td>
                 <td>去除黃光偏色</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>
                   螢光燈 <span>（Fluorescent）</span>{" "}
                 </td>
@@ -68,13 +68,13 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
                 <td>辦公室燈光</td>
                 <td>補藍色調</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>閃光燈（Flash）</td>
                 <td>約 5500K</td>
                 <td>使用閃燈拍攝時</td>
                 <td>自然白光</td>
               </tr>
-              <tr className="odd:bg-white/20 even:bg-gray-100/20 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
+              <tr className="odd:bg-black/50even:bg-gray-500/500 hover:odd:bg-blue-900/50  hover:even:bg-red-500/50 hover:text-white">
                 <td>自訂（Custom） </td>
                 <td>使用灰卡設定</td>
                 <td>專業色彩還原</td>
@@ -89,7 +89,7 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
             <img
               src="/project-photography/color-t.webp"
               alt="色溫圖"
-              className="w-full my-4"
+              className="w-full my-4 h-20"
             />
             <p className="w-full flex items-center justify-between">
               <span>0</span> <span>5000</span> <span>10000</span>

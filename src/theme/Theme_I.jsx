@@ -22,11 +22,11 @@ const Theme_I = () => {
       id="theme_I"
       className="theme themeI w-full max-w-screen relative h-auto bg-black flex flex-wrap "
     >
-      <Container_I w="w-full" h="h-[100vh]">
+      <Container_I w="w-full" h="h-screen">
         <Theme_I_i isToggle={isToggle} setIsToggle={setIsToggle} />
       </Container_I>
       {/* ------------------------ */}
-      <Container_III w="w-full" h="h-screen">
+      <Container_III flex="flex flex-col" w="w-full" h="h-screen" h2="h-screen">
         <Theme_I_ii isToggle={isToggle} setIsToggle={setIsToggle} />
         <Theme_I_iii isToggle={isToggle} setIsToggle={setIsToggle} />
         <Theme_I_iv isToggle={isToggle} setIsToggle={setIsToggle} />

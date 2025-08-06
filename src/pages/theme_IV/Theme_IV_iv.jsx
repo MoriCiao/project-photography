@@ -3,6 +3,11 @@ import React from "react";
 const Theme_IV_iv = () => {
   return (
     <section className="theme_IV_item">
+      <span
+        id="theme_IV_iv"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
+
       {/* （A / Av – Aperture Priority） */}
       <h3>光圈先決模式（A / Av – Aperture Priority）</h3>
       <p>你控制光圈，相機自動選擇適合的快門速度。</p>

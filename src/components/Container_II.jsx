@@ -1,15 +1,15 @@
 import React from "react";
 
-const Container_II = ({ children, w, h }) => {
+const Container_II = ({ children, flex, w, h1, h2 }) => {
   return (
-    <div className={`container_II flex flex-col ${w} h-screen`}>
+    <div className={`container_II ${flex} ${w} ${h1}`}>
       <div
-        className={`relative ${h} w-full overflow-hidden  bg-gradient-to-br from-black/50 via-black/100 to-black/50`}
+        className={`relative ${h2} w-full overflow-hidden  bg-gradient-to-br from-black/50 via-black/100 to-black/50`}
       >
         {children[0]}
       </div>
       <div
-        className={`relative ${h} w-full overflow-hidden  bg-gradient-to-br from-black/50 via-black/100 to-black/50`}
+        className={`relative ${h2} w-full overflow-hidden  bg-gradient-to-br from-black/50 via-black/100 to-black/50`}
       >
         {children[1]}
       </div>

@@ -10,16 +10,18 @@ import Theme_V_vi from "../pages/theme_V/Theme_V_vi";
 const Theme_V = () => {
   return (
     <article id="theme_V" className="theme themeV">
-      <Theme_V_i />
+      <Container_I w="w-[100%]" h="h-screen">
+        <Theme_V_i />
+      </Container_I>
+      <Container_II flex="flex gap-4" w="w-[100%]" h1="h-[50vh]" h2="h-[100%]">
+        <Theme_V_ii />
+        <Theme_V_iii />
+      </Container_II>
+      <Container_II flex="flex gap-4" w="w-[100%]" h1="h-[50vh]" h2="h-[100%]">
+        <Theme_V_iv />
 
-      <Theme_V_ii />
-
-      <Theme_V_iii />
-
-      <Theme_V_iv />
-
-      <Theme_V_v />
-
+        <Theme_V_v />
+      </Container_II>{" "}
       <Theme_V_vi />
     </article>
   );

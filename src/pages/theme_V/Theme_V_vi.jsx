@@ -2,7 +2,7 @@ import React from "react";
 
 const Theme_V_vi = () => {
   return (
-    <section className="theme_V_item">
+    <section className="theme_V_item flex border items-center justify-center gap-8">
       <div>
         {/* （適合做成 Tips 小提示框） */}
         <h3>💡小技巧：</h3>

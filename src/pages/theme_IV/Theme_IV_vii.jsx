@@ -3,6 +3,11 @@ import React from "react";
 const Theme_IV_vii = () => {
   return (
     <section className="theme_IV_item">
+      <span
+        id="theme_IV_vii"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
+
       {/* （Auto） */}
       <h3>自動模式（Auto）</h3>
       <p>

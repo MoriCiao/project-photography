@@ -4,7 +4,6 @@ import ContainerBg from "../../components/containerBg";
 const Theme_I_iv = ({ isToggle, setIsToggle }) => {
   return (
     <section
-      id="iso"
       className={`${
         isToggle.name === "iso" && isToggle.iso === true
           ? "toggle -translate-x-150"
@@ -17,15 +16,20 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         })
       }
     >
+      <div className="absolute -top-20 left-0 text-white border w-200">
+        <span id="iso"></span>
+      </div>
+
       <ContainerBg
-        src={"/project-photography/theme_I_iv.webp"}
+        src={"/project-photography/theme_I_iii.webp"}
         alt={"theme_I背景"}
         className={`theme_I-bg ${
-          isToggle.iso
-            ? "w-120 left-0 translate-x-250 bottom-1/2 translate-y-1/2 "
-            : "w-70 left-0 translate-x-1/2 bottom-4"
-        } objcet-cover p-4 bg-white rounded-xl `}
+          isToggle.aperture
+            ? "left-0 top-0 scale-200 -translate-x-100"
+            : "left-0 top-0 "
+        } object-cover w-full h-full opacity-20`}
       />
+
       <div
         className={`${
           isToggle.iso ? "theme_I_open" : "theme_I_close"
@@ -46,6 +50,14 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
           </ul>
         </div>
       </div>
+
+      <span
+        className={`${
+          isToggle.iso ? "opacity-100" : "opacity-0"
+        } absolute right-20 top-1/2 -translate-y-1/2 w-100 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+      >
+        <img src="/project-photography/theme_I_iv.webp" alt="iso" />
+      </span>
     </section>
   );
 };

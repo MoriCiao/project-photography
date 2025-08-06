@@ -1,11 +1,17 @@
-.theme_I{
-    scroll-behavior: smooth;
-}
-.theme_one_i{
+
+.theme_I_i{
     h1,span,nav{
         position: relative;
         z-index: 2;
     }
+    li {
+        transition: all 0.6s;
+
+        &:hover {
+            color: orangered;
+        }
+    }
+    
 }
 
 .shutter, .aperture, .iso{
@@ -13,11 +19,7 @@
     max-width: 90vw;
     
 }
-.theme_I-bg{
-    position: absolute;
-    transition: all 1s ease;
-    
-}
+
 .theme_I_open{
     transition: all 1s ;
     h3{

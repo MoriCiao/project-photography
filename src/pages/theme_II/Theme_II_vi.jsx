@@ -8,20 +8,29 @@ const Theme_II_vi = ({ isToggle, setIsToggle, handleToggle }) => {
       className={`theme_II_vi theme_II_item `}
       onClick={() => handleToggle("theme_II_vi")}
     >
+      <ContainerBg
+        src={"/project-photography/items-bg.webp"}
+        alt={"theme_II背景"}
+        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
+          isToggle.theme_II_vi ? "brightness-30 " : "brightness-60 "
+        } opacity-100 `}
+      />
       <div className="flex flex-col gap-4">
-        {/* （適合做成 Tips 小提示框） */}
-        <h3>💡小技巧：</h3>
+        <h3>總結</h3>
         <div
           className={` ${
-            isToggle.theme_II_vi ? "opacity-100 w-full" : "opacity-0 h-30 w-0"
+            isToggle.theme_II_vi
+              ? "opacity-100 w-full text-[1rem]"
+              : "opacity-0 h-30 w-0"
           } transition-all duration-500`}
         >
           <ul>
-            <li>室內拍攝容易偏黃，建議調整為「白熾燈」或「手動設定」白平衡</li>
-            <li>想要溫暖氛圍可故意用「陰天」或「Cloudy」模式</li>
+            <li>調整不同光源下的色溫，讓影像呈現出自然真實的色彩</li>
+            <li>使用 RAW 格式拍攝，更可在後期靈活微調。</li>
             <li>
-              如果用手機拍照，很多手機也提供色溫調整功能（可搭配 App 編輯）
+              掌握白平衡，不只能提升影像品質，也能讓你的作品更具情緒與故事感。
             </li>
+            <li>「掌握色溫，讓照片說真話。」</li>
           </ul>
         </div>
       </div>

@@ -3,7 +3,7 @@ import hero from "../assets/hero.webp";
 const Hero = () => {
   useEffect(() => {
     const image = document.querySelectorAll(".hero");
-    console.log(image);
+
     const observer = new IntersectionObserver(
       (entries) => {
         // console.log(entries);

@@ -13,23 +13,20 @@ section.header img.hero {
   transition: 0.6s;
 }
 
-.theme_I {
-  scroll-behavior: smooth;
-}
-
-.theme_one_i h1, .theme_one_i span, .theme_one_i nav {
+.theme_I_i h1, .theme_I_i span, .theme_I_i nav {
   position: relative;
   z-index: 2;
+}
+.theme_I_i li {
+  transition: all 0.6s;
+}
+.theme_I_i li:hover {
+  color: orangered;
 }
 
 .shutter, .aperture, .iso {
   transition: 1s;
   max-width: 90vw;
-}
-
-.theme_I-bg {
-  position: absolute;
-  transition: all 1s ease;
 }
 
 .theme_I_open {
@@ -85,9 +82,10 @@ section.header img.hero {
 }
 
 section.theme_II_item {
-  height: 100%;
+  position: relative;
   transition: 0.6s;
   color: white;
+  cursor: pointer;
 }
 section.theme_II_item h1, section.theme_II_item h3 {
   position: relative;
@@ -99,12 +97,14 @@ section.theme_II_item ul {
   flex-direction: column;
   gap: 1rem;
 }
+section.theme_II_item ul li {
+  transition: all 0.6s;
+}
+section.theme_II_item ul li:hover {
+  color: orangered;
+}
 section.theme_II_item ul li a {
   font-size: 1.25rem;
-}
-section.theme_II_item ul li a:hover {
-  color: rgb(255, 138, 96);
-  text-shadow: 2px 4px 5px black;
 }
 section.theme_II_item p, section.theme_II_item nav, section.theme_II_item span, section.theme_II_item ul, section.theme_II_item table, section.theme_II_item .theme_context_item {
   position: relative;
@@ -132,6 +132,7 @@ section.theme_II_item table thead tr {
   border: 1px white solid;
   background: #808080;
   color: white;
+  text-shadow: 2px 2px 1px black;
   font-size: 1.15rem;
   font-weight: 600;
 }
@@ -143,8 +144,43 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 }
 
 .theme_III_item {
-  border: green 1px solid;
+  transition: all 0.6s ease;
   height: 100%;
+}
+
+.theme_III_i li, .theme_III_text li {
+  transition: all 0.6s;
+}
+.theme_III_i li:hover, .theme_III_text li:hover {
+  color: orangered;
+}
+
+.theme_III_text {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.h3-span {
+  font-size: 1.15rem;
+}
+
+.themeIV {
+  cursor: pointer;
+}
+.themeIV li {
+  transition: all 0.6s;
+}
+.themeIV li:hover {
+  color: orangered;
+}
+.themeIV table {
+  border: white 1px solid;
+  text-align: center;
+}
+.themeIV table td, .themeIV table th {
+  border: white 1px solid;
+  padding: 1rem 2rem;
 }
 
 html, body {
@@ -171,15 +207,8 @@ html .theme li::before, body .theme li::before {
   content: "🔸";
 }
 html .theme section, body .theme section {
-  padding: 2rem;
-}
-html .themeIV, html .themeV, body .themeIV, body .themeV {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-html .themeIV section, html .themeV section, body .themeIV section, body .themeV section {
-  padding: 0rem;
+  padding: 2.5rem;
+  height: 100%;
 }
 
 .shutter,

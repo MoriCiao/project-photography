@@ -3,10 +3,9 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_I_iii = ({ isToggle, setIsToggle }) => {
   /* 光圈（Aperture / f 值） */
-  console.log(isToggle);
+
   return (
     <section
-      id="aperture"
       className={`${
         isToggle.name === "aperture" && isToggle.aperture === true
           ? "toggle "
@@ -16,6 +15,10 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         setIsToggle({ name: "aperture", aperture: !isToggle.aperture })
       }
     >
+      <div className="absolute -top-20 left-0 text-white border w-200">
+        <span id="aperture"></span>
+      </div>
+
       <ContainerBg
         src={"/project-photography/theme_I_iii.webp"}
         alt={"theme_I背景"}
@@ -25,15 +28,6 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
             : "left-0 top-0 "
         } object-cover w-full h-full opacity-20`}
       />
-      {/* <div
-        className={`${
-          isToggle.aperture ? "opacity-100" : "opacity-0"
-        } absolute right-0 w-200  flex transition duration-1000 border-4 border-white/50 rounded-xl`}
-      >
-        <img src="/project-photography/apertrue-3.webp" alt="apertrue-2" />
-        <img src="/project-photography/apertrue-2.webp" alt="apertrue-2" />
-      </div> */}
-
       <div
         className={`${
           isToggle.aperture ? "theme_I_open" : "theme_I_close"
@@ -54,6 +48,14 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
           </ul>
         </div>
       </div>
+
+      <span
+        className={`${
+          isToggle.aperture ? "opacity-100" : "opacity-0"
+        } absolute right-20 top-20 w-180 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+      >
+        <img src="/project-photography/apertrue-3.webp" alt="apertrue-2" />
+      </span>
     </section>
   );
 };

@@ -4,6 +4,11 @@ const Theme_IV_iii = () => {
   return (
     <section className="theme_IV_item">
       {/* M – Manual） */}
+      <span
+        id="theme_IV_iii"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
+
       <h3>全手動模式（M – Manual）</h3>
       <p>完全由使用者控制快門與光圈，提供最高自由度。</p>
       <div>

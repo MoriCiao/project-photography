@@ -4,6 +4,11 @@ const Theme_IV_vi = () => {
   return (
     <section className="theme_IV_item">
       {/* （P – Program Mode） */}
+
+      <span
+        id="theme_IV_vi"
+        className="absolute top-0 left-0 -translate-y-0"
+      ></span>
       <h3>程式自動模式（P – Program Mode）</h3>
       <p>快門與光圈由相機搭配，但你仍可調整 ISO、白平衡等其他參數。</p>
       <div>

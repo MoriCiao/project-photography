@@ -1,0 +1,19 @@
+.themeIV{
+    cursor: pointer;
+
+    li{
+        transition: all 0.6s ;
+        &:hover{
+            color: orangered;
+        }
+    }
+    table{
+        border: white 1px solid;
+        text-align: center;
+        td,th{  
+            border: white 1px solid;
+            padding: 1rem 2rem;
+        }
+    }
+    
+}
