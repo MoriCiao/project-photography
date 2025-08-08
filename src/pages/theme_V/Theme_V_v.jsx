@@ -14,7 +14,7 @@ const Theme_V_v = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
         }
       />
       <div
-        className={`absolute top-8 right-20 grid grid-cols-4 gap-10 transition duration-500  ${
+        className={`absolute top-8 right-10 grid grid-cols-4 gap-8 transition duration-500  ${
           isToggle.theme_V_v ? "h-80 opacity-100" : "h-0 opacity-0"
         }`}
       >

@@ -20,7 +20,8 @@ const Theme_III_ii = ({ items_style }) => {
         id="theme_III_ii"
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
-      <div className="theme_III_text">
+
+      <div className="theme_III_text border">
         <h3>
           Single AF / One-Shot AF{" "}
           <span className="h3-span">（單次自動對焦）</span>

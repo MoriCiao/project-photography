@@ -24,7 +24,7 @@ const Theme_V_iii = ({
       />
 
       <div
-        className={` absolute top-5 right-40 grid grid-cols-2 gap-15 transition-all duration-800 ${
+        className={` absolute top-5 right-30 grid grid-cols-2 gap-15 transition-all duration-800 ${
           isToggle.theme_V_iii ? "h-100 opacity-100" : "h-0 opacity-0"
         }`}
       >
@@ -50,7 +50,7 @@ const Theme_V_iii = ({
       {/* 常見焦段分類與特色 */}
       <div className="theme_V-text flex flex-col gap-4">
         <h3>常見焦段分類與特色</h3>
-        <div className={`${animate} p-8`}>
+        <div className={`${animate} py-8`}>
           <table className={style.table}>
             <thead>
               <tr className={style.tr1}>

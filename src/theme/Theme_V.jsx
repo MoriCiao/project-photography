@@ -30,7 +30,7 @@ const Theme_V = () => {
   }
 
   const style = {
-    table: "bg-gray-800 ",
+    table: "bg-gray-800",
     tr1: "bg-black/25 ",
     tr2: "odd:bg-sky-900/20  even:bg-slate-900/20  hover:odd:bg-sky-500/50  hover:even:bg-slate-500/50",
   };

@@ -5,9 +5,9 @@ const tr_style =
 
 const Theme_IV_ii = () => {
   return (
-    <section className="relative z-3">
-      <h3>常見拍攝模式一覽</h3>
-      <table className=" bg-gradient-to-br from-white/10 via-white/20 to-black/20 mt-4">
+    <section className="relative z-3 w-full flex flex-col items-end justify-start">
+      <h3 className=" w-full text-center">常見拍攝模式一覽</h3>
+      <table className=" bg-gradient-to-br from-white/10 via-white/20 to-black/20 mt-4 w-full">
         <thead>
           <tr className="border-b bg-white/50">
             <th>模式名稱</th>

@@ -7,12 +7,13 @@
         }
     }
     table{
+        
         border: white 1px solid;
         text-align: center;
         
         td,th{  
             border: white 1px solid;
-            padding: 1.5rem;
+            padding:1rem 0.75rem ;
         }
     }
     
@@ -30,15 +31,19 @@
         transform: translate(-2rem, -2rem);
         border: 1px solid transparent;
         transition:all 1s ease-in-out ;
-        padding: 1rem;
+        padding: 0rem;
+        // border: red 2px solid;
+        h3{font-size: 1.5rem;}
+
         .description{
             opacity: 0;
             transition: all 0.6s ease;
+            font-size: 1rem;
         }
        }
     &:hover{
         .theme_iv_text{
-            scale: 1.1;
+            scale: 1.05;
             transform: translateX(20px);
             padding: 0.3rem  1rem 1rem 1rem;
             border-radius: 0.25rem;
@@ -80,4 +85,4 @@
             top: 0;
             left: 0;
             
-        }
+}

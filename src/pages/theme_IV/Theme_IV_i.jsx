@@ -43,41 +43,43 @@ const Theme_IV_i = () => {
         </footer>
       </blockquote>
 
-      <div className="flex flex-col gap-4 relative z-3">
-        <h1>
-          Shooting Modes<span className="text-[1.25rem]">（拍攝模式）</span>{" "}
-        </h1>
-        <p className="flex flex-col space-y-4">
-          <span>拍攝模式決定了你與相機之間的控制比例。</span>
-          <span>
-            根據場景與需求，你可以選擇全手動或半自動的拍攝方式，讓曝光更穩定、操作更直覺。
-          </span>
-        </p>
-        <nav>
-          <ul className="flex flex-col gap-4 text-[1.25rem]">
-            <li>
-              <a href="#theme_IV_iii">全手動模式</a>
-            </li>
-            <li>
-              <a href="#theme_IV_iv">光圈先決模式</a>
-            </li>
-            <li>
-              <a href="#theme_IV_v">快門先決模式</a>
-            </li>
-            <li>
-              <a href="#theme_IV_vi">程式自動模式</a>
-            </li>
-            <li>
-              <a href="#theme_IV_vii">自動模式</a>
-            </li>
-            <li>
-              <a href="#theme_IV_viii">場景模式</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <Theme_IV_ii />
+      <div className="grid grid-cols-2 gap-4 relative z-3">
+        <div className="w-full h-full">
+          <h1>
+            Shooting Modes<span className="text-[1.25rem]">（拍攝模式）</span>{" "}
+          </h1>
+          <p className="flex flex-col space-y-4">
+            <span>拍攝模式決定了你與相機之間的控制比例。</span>
+            <span>
+              根據場景與需求，你可以選擇全手動或半自動的拍攝方式，讓曝光更穩定、操作更直覺。
+            </span>
+          </p>
+          <nav>
+            <ul className="flex flex-col gap-4 text-[1.25rem]">
+              <li>
+                <a href="#theme_IV_iii">全手動模式</a>
+              </li>
+              <li>
+                <a href="#theme_IV_iv">光圈先決模式</a>
+              </li>
+              <li>
+                <a href="#theme_IV_v">快門先決模式</a>
+              </li>
+              <li>
+                <a href="#theme_IV_vi">程式自動模式</a>
+              </li>
+              <li>
+                <a href="#theme_IV_vii">自動模式</a>
+              </li>
+              <li>
+                <a href="#theme_IV_viii">場景模式</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="w-full h-full ">
+          <Theme_IV_ii />
+        </div>
       </div>
     </section>
   );

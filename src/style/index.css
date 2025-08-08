@@ -210,7 +210,7 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 }
 .themeIV table td, .themeIV table th {
   border: white 1px solid;
-  padding: 1.5rem;
+  padding: 1rem 0.75rem;
 }
 
 .theme_IV_item {
@@ -225,14 +225,18 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   transform: translate(-2rem, -2rem);
   border: 1px solid transparent;
   transition: all 1s ease-in-out;
-  padding: 1rem;
+  padding: 0rem;
+}
+.theme_IV_item .theme_iv_text h3 {
+  font-size: 1.5rem;
 }
 .theme_IV_item .theme_iv_text .description {
   opacity: 0;
   transition: all 0.6s ease;
+  font-size: 1rem;
 }
 .theme_IV_item:hover .theme_iv_text {
-  scale: 1.1;
+  scale: 1.05;
   transform: translateX(20px);
   padding: 0.3rem 1rem 1rem 1rem;
   border-radius: 0.25rem;
@@ -285,6 +289,12 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 .theme_V_item .theme_V-text {
   position: relative;
   z-index: 2;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
 }
 
 html, body {

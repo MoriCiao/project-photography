@@ -52,14 +52,14 @@ const Theme_V_iv = ({
 
       {/* 焦段與「視角變化」 */}
 
-      <div className="theme_V-text flex flex-col gap-4 max-w-230">
+      <div className="theme_V-text flex flex-col gap-4 max-w-200 ">
         <h3>焦段與「視角變化」</h3>
         <div className={`${animate} flex flex-col gap-12`}>
           <p>
             不同焦段除了改變拍攝距離，還會影響視覺上的「透視感」與背景表現：
           </p>
           <div>
-            <table className={`${style.table} w-220`}>
+            <table className={`${style.table} w-200`}>
               <thead>
                 <tr className={style.tr1}>
                   <th>焦段</th>

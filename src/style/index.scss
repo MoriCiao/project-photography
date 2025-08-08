@@ -6,7 +6,10 @@
 @import '_theme_iv.scss';
 @import "_theme_v.scss";
 
-
+html{
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 html,body{
     scroll-behavior: smooth;
     width: 100%;
