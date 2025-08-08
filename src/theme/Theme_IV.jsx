@@ -1,60 +1,57 @@
 import React, { useState } from "react";
 import Container_I from "../components/Container_I";
 import Container_II from "../components/Container_II";
-import Theme_IV_i from "../pages/theme_IV/theme_IV_i";
-import Theme_IV_ii from "../pages/theme_IV/theme_IV_ii";
-import Theme_IV_iii from "../pages/theme_IV/theme_IV_iii";
-import Theme_IV_iv from "../pages/theme_IV/theme_IV_iv";
-import Theme_IV_v from "../pages/theme_IV/theme_IV_v";
-import Theme_IV_vi from "../pages/theme_IV/theme_IV_vi";
-import Theme_IV_vii from "../pages/theme_IV/theme_IV_vii";
-import Theme_IV_viii from "../pages/theme_IV/theme_IV_viii";
-const Theme_IV = () => {
-  const [isToggle, setIsToggle] = useState({
-    name: "",
-    theme_IV_ii: false,
-    theme_IV_iii: false,
-    theme_IV_iv: false,
-    theme_IV_v: false,
-    theme_IV_vi: false,
-    theme_IV_vii: false,
-    theme_IV_viii: false,
-  });
+import Theme_IV_i from "../pages/theme_IV/Theme_IV_i";
 
-  const handleToggle = (name) => {
-    setIsToggle({ name: name, [name]: !isToggle[name] });
+import Theme_IV_iii from "../pages/theme_IV/Theme_IV_iii";
+import Theme_IV_iv from "../pages/theme_IV/Theme_IV_iv";
+import Theme_IV_v from "../pages/theme_IV/Theme_IV_v";
+import Theme_IV_vi from "../pages/theme_IV/Theme_IV_vi";
+import Theme_IV_vii from "../pages/theme_IV/Theme_IV_vii";
+import Theme_IV_viii from "../pages/theme_IV/Theme_IV_viii";
+const Theme_IV = () => {
+  const style = {
+    section:
+      "border-4 border-white/20 rounded-sm hover:border-2 hover:border-white/50",
+    div1: "relative z-2 w-[90%] h-full ",
+    div2: "description flex flex-col gap-4",
   };
 
-  const list = [
-    "theme_IV_ii",
-    "theme_IV_iii",
-    "theme_IV_iv",
-    "theme_IV_v",
-    "theme_IV_vi",
-    "theme_IV_vii",
-    "theme_IV_viii",
-  ];
+  // const handleToggle = (name) => {
+  //   setIsToggle({ name: name, [name]: !isToggle[name] });
+  // };
+
+  // const list = [
+  //   "theme_IV_ii",
+  //   "theme_IV_iii",
+  //   "theme_IV_iv",
+  //   "theme_IV_v",
+  //   "theme_IV_vi",
+  //   "theme_IV_vii",
+  //   "theme_IV_viii",
+  // ];
 
   return (
-    <article id="theme_IV" className="theme themeIV bg-black text-white">
+    <article id="theme_IV" className="theme themeIV bg-black text-white pb-12">
       <Container_I w="w-[100%]" h="h-screen">
-        <Theme_IV_i isToggle={isToggle} setIsToggle={setIsToggle} />
+        <Theme_IV_i />
       </Container_I>
+      <div className="flex flex-col gap-8 items-center">
+        <Container_II flex="flex gap-8" w="w-[90%]" h1="h-[40vh]" h2="h-[100%]">
+          <Theme_IV_iii style={style} />
+          <Theme_IV_iv style={style} />
+        </Container_II>
 
-      <Container_II flex="flex gap-4" w="w-[100%]" h1="h-[50vh]" h2="h-[100%]">
-        <Theme_IV_iii />
-        <Theme_IV_iv />
-      </Container_II>
+        <Container_II flex="flex gap-8" w="w-[90%]" h1="h-[40vh]" h2="h-[100%]">
+          <Theme_IV_v style={style} />
+          <Theme_IV_vi style={style} />
+        </Container_II>
 
-      <Container_II flex="flex gap-4" w="w-[100%]" h1="h-[50vh]" h2="h-[100%]">
-        <Theme_IV_v />
-        <Theme_IV_vi />
-      </Container_II>
-
-      <Container_II flex="flex gap-4" w="w-[100%]" h1="h-[50vh]" h2="h-[100%]">
-        <Theme_IV_vii />
-        <Theme_IV_viii />
-      </Container_II>
+        <Container_II flex="flex gap-8" w="w-[90%]" h1="h-[40vh]" h2="h-[100%]">
+          <Theme_IV_vii style={style} />
+          <Theme_IV_viii style={style} />
+        </Container_II>
+      </div>
     </article>
   );
 };

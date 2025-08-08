@@ -17,15 +17,15 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
         src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
         className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
-          isToggle.theme_II_ii ? "brightness-30 " : "brightness-60 "
+          isToggle.theme_II_ii ? "brightness-30" : "brightness-60 "
         } opacity-100 `}
       />
       <ContainerBg
         src={"/project-photography/theme_II_ii.webp"}
         alt={"theme_II背景"}
         className={`${
-          isToggle.theme_II_ii ? "block p-4 max-w-200" : "hidden p-0 w-[100%]"
-        }   absolute top-0 right-0  h-full border border-black  transition-all duration-1000 -translate-y-0`}
+          isToggle.theme_II_ii ? "block p-4 max-w-150 " : "hidden p-0 w-[100%]"
+        }   absolute top-1/2 right-0   border border-black  transition-all duration-1000 -translate-y-1/2`}
       />
       <div
         className={`${

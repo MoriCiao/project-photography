@@ -10,9 +10,9 @@ const Container_IV = ({
 }) => {
   return (
     <div
-      className={`container_III relative  gap-8  items-center justify-center ${w} max-h-screen`}
+      className={`container_III relative flex flex-col gap-4  items-center justify-center ${w} max-h-screen`}
     >
-      <div className=" flex gap-4 mb-4 px-4">
+      <div className=" flex gap-4 px-4 w-full  h-[60vh]">
         {children[0] && (
           <div
             className={`${
@@ -51,7 +51,7 @@ const Container_IV = ({
         )}
       </div>
 
-      <div className="flex gap-4 px-4">
+      <div className="flex gap-4 px-4 w-full h-[40vh]">
         {children[3] && (
           <div
             className={`${

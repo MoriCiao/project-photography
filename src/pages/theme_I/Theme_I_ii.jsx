@@ -6,9 +6,9 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
     <section
       className={`${
         isToggle.name === "shutter" && isToggle.shutter === true
-          ? "toggle translate-x-150 from-[#00c9ff]/100  to-[#92fe9d]/100"
-          : "not-toggle from-[#00c9ff]/80  to-[#92fe9d]/80"
-      } shutter h-full p-8 text-start text-black flex flex-col gap-2 items-center justify-center border overflow-hidden bg-gradient-to-br border-4 border-white/50 rounded-2xl text-white`}
+          ? "toggle translate-x-150 "
+          : "not-toggle"
+      } shutter h-full p-8 text-start text-black flex flex-col gap-2 items-center justify-center border overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
       onClick={() =>
         setIsToggle({ name: "shutter", shutter: !isToggle.shutter })
       }
@@ -21,23 +21,16 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.aperture
-            ? "left-0 top-0 scale-200 -translate-x-100"
-            : "left-0 top-0 "
+            ? "absolute left-0 top-0 scale-200 -translate-x-100"
+            : "absolute left-0 top-0 "
         } object-cover w-full h-full opacity-20`}
       />
-      <blockquote className="absolute z-1 right-40 bottom-20 scale-110">
-        <p> “Your first 10,000 photographs are your worst.”</p>
-        <p className="text-end">你最初的一萬張照片，都是最糟的。</p>
-        <footer className="text-end">
-          {" "}
-          — <cite>Henri Cartier-Bresson</cite>
-        </footer>
-      </blockquote>
+
       {/* 快門速度（Shutter Speed） */}
 
       <div
         className={`${
-          isToggle.shutter ? "theme_I_open text-black" : "theme_I_close"
+          isToggle.shutter ? "theme_I_open" : "theme_I_close"
         } transtion drutiona-1000 flex flex-col gap-4`}
       >
         <h3 className="">快門速度（Shutter Speed）</h3>

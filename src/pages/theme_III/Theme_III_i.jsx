@@ -11,7 +11,7 @@ const Theme_III_i = () => {
           className={"theme-bg w-[100%] rounded-3xl "}
         />
       </div>
-      <blockquote className="absolute z-1 right-60 bottom-20 scale-110">
+      <blockquote className="absolute z-1 right-60 bottom-40 scale-110">
         <p>“When words become unclear, I shall focus with photographs.”</p>
         <p className="text-end">當言語變得模糊時，我將用照片對焦。</p>
         <footer className="text-end">

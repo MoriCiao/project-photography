@@ -24,8 +24,8 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.aperture
-            ? "left-0 top-0 scale-200 -translate-x-100"
-            : "left-0 top-0 "
+            ? "absolute left-0 top-0 scale-200 -translate-x-100"
+            : "absolute left-0 top-0 "
         } object-cover w-full h-full opacity-20`}
       />
       <div

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+section.header {
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent, transparent);
+}
 section.header nav ul li {
   font-weight: 200;
   text-shadow: -2px 2px 1px black;
@@ -17,16 +20,50 @@ section.header img.hero {
   position: relative;
   z-index: 2;
 }
-.theme_I_i li {
-  transition: all 0.6s;
+
+.shutter,
+.aperture,
+.iso,
+.result {
+  align-items: center;
+  justify-content: start;
 }
-.theme_I_i li:hover {
-  color: orangered;
+.shutter div,
+.shutter h3,
+.shutter p,
+.shutter ul,
+.shutter li,
+.aperture div,
+.aperture h3,
+.aperture p,
+.aperture ul,
+.aperture li,
+.iso div,
+.iso h3,
+.iso p,
+.iso ul,
+.iso li,
+.result div,
+.result h3,
+.result p,
+.result ul,
+.result li {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: start;
 }
 
 .shutter, .aperture, .iso {
   transition: 1s;
   max-width: 90vw;
+}
+
+li {
+  transition: all 0.6s;
+}
+li:hover {
+  color: orangered;
 }
 
 .theme_I_open {
@@ -161,13 +198,6 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   cursor: pointer;
 }
 
-.h3-span {
-  font-size: 1.15rem;
-}
-
-.themeIV {
-  cursor: pointer;
-}
 .themeIV li {
   transition: all 0.6s;
 }
@@ -180,7 +210,81 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 }
 .themeIV table td, .themeIV table th {
   border: white 1px solid;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
+}
+
+.theme_IV_item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.theme_IV_item .theme_iv_text {
+  transform: translate(-2rem, -2rem);
+  border: 1px solid transparent;
+  transition: all 1s ease-in-out;
+  padding: 1rem;
+}
+.theme_IV_item .theme_iv_text .description {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.theme_IV_item:hover .theme_iv_text {
+  scale: 1.1;
+  transform: translateX(20px);
+  padding: 0.3rem 1rem 1rem 1rem;
+  border-radius: 0.25rem;
+  border: rgba(255, 255, 255, 0.3) solid 1px;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+.theme_IV_item:hover .theme_iv_text .description {
+  opacity: 1;
+}
+.theme_IV_item:hover .theme_IV_item-text {
+  z-index: 1;
+  scale: 0.8;
+  transform: rotate(-15deg) translateX(100px) translateY(150px);
+  filter: blur(2px);
+}
+.theme_IV_item .theme_IV_item-text {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  min-width: 25rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1.2s ease;
+  filter: brightness(1);
+}
+
+.bg-radial {
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
+  top: 0;
+  left: 0;
+}
+
+.theme_V_item {
+  border: 2px white solid;
+  overflow: hidden;
+}
+.theme_V_item table {
+  border: white 1px solid;
+  text-align: center;
+}
+.theme_V_item table td,
+.theme_V_item table th {
+  border: white 1px solid;
+  padding: 0.75rem 1.5rem;
+}
+.theme_V_item .theme_V-text {
+  position: relative;
+  z-index: 2;
 }
 
 html, body {
@@ -190,9 +294,18 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
-html .theme, body .theme {
-  padding: 0rem;
+html .theme_I_i,
+html .theme_II_i,
+html .theme_I_iii,
+html .theme_I_iv,
+html .theme_I_v, body .theme_I_i,
+body .theme_II_i,
+body .theme_I_iii,
+body .theme_I_iv,
+body .theme_I_v {
+  padding: 8rem !important;
 }
 html .theme h1, body .theme h1 {
   position: relative;
@@ -207,39 +320,10 @@ html .theme li::before, body .theme li::before {
   content: "🔸";
 }
 html .theme section, body .theme section {
-  padding: 2.5rem;
+  padding: 3.5rem;
   height: 100%;
 }
 
-.shutter,
-.aperture,
-.iso,
-.result {
-  align-items: center;
-  justify-content: start;
-}
-.shutter div,
-.shutter h3,
-.shutter p,
-.shutter ul,
-.shutter li,
-.aperture div,
-.aperture h3,
-.aperture p,
-.aperture ul,
-.aperture li,
-.iso div,
-.iso h3,
-.iso p,
-.iso ul,
-.iso li,
-.result div,
-.result h3,
-.result p,
-.result ul,
-.result li {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  text-align: start;
+.h3-span {
+  font-size: 1.15rem;
 }/*# sourceMappingURL=index.css.map */

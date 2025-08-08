@@ -8,7 +8,7 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         isToggle.name === "iso" && isToggle.iso === true
           ? "toggle -translate-x-150"
           : "not-toggle "
-      } iso h-full p-8 text-start flex flex-col gap-2 items-center justify-center overflow-hidden bg-gradient-to-br from-[#6a11cb] to-[#2575fc] border-4 border-white/50 rounded-2xl text-white`}
+      } iso h-full p-8 text-start flex flex-col gap-2 items-center justify-center overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
       onClick={() =>
         setIsToggle({
           name: "iso",
@@ -25,8 +25,8 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.aperture
-            ? "left-0 top-0 scale-200 -translate-x-100"
-            : "left-0 top-0 "
+            ? "absolute left-0 top-0 scale-200 -translate-x-100"
+            : "absolute left-0 top-0 "
         } object-cover w-full h-full opacity-20`}
       />
 
@@ -54,7 +54,7 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
       <span
         className={`${
           isToggle.iso ? "opacity-100" : "opacity-0"
-        } absolute right-20 top-1/2 -translate-y-1/2 w-100 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+        } absolute right-60 top-1/2 -translate-y-1/2 w-120 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
       >
         <img src="/project-photography/theme_I_iv.webp" alt="iso" />
       </span>

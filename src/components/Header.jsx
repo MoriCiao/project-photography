@@ -4,7 +4,7 @@ import ScrollScaleImage from "./ScrollScaleImage";
 import heroImg from "../assets/hero.webp";
 const Header = () => {
   return (
-    <section className="header text-white relative h-screen overflow-hidden">
+    <section className="header text-white relative h-screen overflow-hidden ">
       <h3 id="header-top" className="text-center text-xl py-4 bg-black/50">
         攝影基礎入門
       </h3>

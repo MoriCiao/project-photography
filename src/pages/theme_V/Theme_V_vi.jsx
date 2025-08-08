@@ -1,30 +1,34 @@
 import React from "react";
+import ContainerBg from "../../components/containerBg";
 
-const Theme_V_vi = () => {
+const Theme_V_vi = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
+  const animate = openAnimation("theme_V_vi", "h-50");
+
   return (
-    <section className="theme_V_item flex border items-center justify-center gap-8">
-      <div>
-        {/* （適合做成 Tips 小提示框） */}
-        <h3>💡小技巧：</h3>
-        <ul>
-          <li>「風景看廣角、人像選中望、近拍用微距，紀實用 50。」</li>
-          <li>16–35mm → 拍風景、建築，給你空間感</li>
-          <li>85mm → 人像的黃金焦段，壓縮感強、背景漂亮</li>
-          <li>100mm 微距 → 放大細節不變形</li>
-          <li>50mm → 萬用好拍、自然紀實感十足！</li>
-        </ul>
-      </div>
+    <section
+      className={`theme_V_item flex border items-start justify-start gap-8 `}
+      onClick={() => handleToggle("theme_V_vi")}
+    >
+      <ContainerBg
+        src={"/project-photography/theme_V-item-bg.webp"}
+        alt={"theme_V背景"}
+        className={
+          "absolute -z-0 top-0 left-0 w-full h-[100%] object-cover brightness-60 blur-[2px] "
+        }
+      />
 
-      <div>
+      <div className={`theme_V-text flex flex-col gap-4`}>
         <h3>總結</h3>
-        <ul>
-          <li>選對焦段，看見不同世界</li>
-          <li>不同的焦段不只是改變「拍多遠」，更是塑造照片風格的關鍵因素</li>
-          <li>
-            廣角營造空間感，望遠強調主體；微距挖掘細節，標準焦段最貼近日常
-          </li>
-          <li>學會運用焦段，就是學會用鏡頭說故事。</li>
-        </ul>
+        <div className={animate}>
+          <ul className="flex flex-col gap-4">
+            <li>選對焦段，看見不同世界</li>
+            <li>不同的焦段不只是改變「拍多遠」，更是塑造照片風格的關鍵因素</li>
+            <li>
+              廣角營造空間感，望遠強調主體；微距挖掘細節，標準焦段最貼近日常
+            </li>
+            <li>學會運用焦段，就是學會用鏡頭說故事。</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

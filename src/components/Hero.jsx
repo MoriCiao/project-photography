@@ -27,7 +27,7 @@ const Hero = () => {
     <img
       src={hero}
       alt="hero.webp"
-      className="hero object-cover w-full transition duration-600"
+      className="hero object-cover w-full transition duration-600 "
     />
   );
 };

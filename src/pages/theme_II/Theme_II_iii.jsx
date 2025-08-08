@@ -22,9 +22,9 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
         <div
           className={`${
             isToggle.theme_II_iii
-              ? "delay-300 opacity-100  max-h-100 -translate-x-0 text-[1rem] "
+              ? "delay-300 opacity-100  -translate-x-0 text-[1rem] "
               : "opacity-0  w-0 h-30 -translate-x-10"
-          } transition-all duration-1000 overflow-hidden flex flex-col items-center overflow-y-auto`}
+          } transition-all duration-1000 overflow-hidden flex flex-col items-center h-100  py-8 overflow-y-auto`}
         >
           <table>
             <thead>

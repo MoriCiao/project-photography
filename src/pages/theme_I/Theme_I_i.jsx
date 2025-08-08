@@ -14,7 +14,7 @@ const Theme_I_i = ({ isToggle, setIsToggle }) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.7 }
     );
 
     imgs.forEach((img) => observer.observe(img));
@@ -31,7 +31,7 @@ const Theme_I_i = ({ isToggle, setIsToggle }) => {
           "theme-bg absolute top-0 left-0 opacity-70 transition duration-500"
         }
       />
-      <blockquote className="absolute z-1 right-40 bottom-20 scale-110">
+      <blockquote className="absolute z-1 right-60 bottom-40 scale-110">
         <p> “Your first 10,000 photographs are your worst.”</p>
         <p className="text-end">你最初的一萬張照片，都是最糟的。</p>
         <footer className="text-end">

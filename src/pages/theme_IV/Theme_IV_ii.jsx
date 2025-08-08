@@ -1,13 +1,13 @@
 import React from "react";
 
 const tr_style =
-  "odd:bg-black/50 even:bg-gray-700/80 hover:odd:bg-slate-200/50 hover:even:bg-green-500/50";
+  "odd:bg-black/50 even:bg-black-900/80 hover:odd:bg-blue-800/50 hover:even:bg-green-800/50";
 
 const Theme_IV_ii = () => {
   return (
-    <section className="theme_IV_item">
+    <section className="relative z-3">
       <h3>常見拍攝模式一覽</h3>
-      <table className=" bg-gradient-to-br from-white/10 via-white/20 to-black/20">
+      <table className=" bg-gradient-to-br from-white/10 via-white/20 to-black/20 mt-4">
         <thead>
           <tr className="border-b bg-white/50">
             <th>模式名稱</th>
@@ -50,7 +50,10 @@ const Theme_IV_ii = () => {
           <tr className={tr_style}>
             <td>場景模式 </td>
             <td>SCN</td>
-            <td>預設參數組合供特定情境使用（如夜景、人像）</td>
+            <td>
+              預設參數組合供特定情境使用 <br />
+              （如夜景、人像）
+            </td>
             <td>入門者快速套用</td>
           </tr>
         </tbody>

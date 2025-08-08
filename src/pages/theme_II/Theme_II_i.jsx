@@ -15,10 +15,10 @@ const Theme_II_i = ({ isToggle }) => {
         src={"/project-photography/theme_II_i-1.webp"}
         alt={"theme_II背景"}
         className={
-          "absolute z-0 top-0 left-0 blur-[1px] theme-bg w-[100%] rounded-3xl "
+          " absolute z-0 top-0 left-0 blur-[3px] brightness-60  w-[100%] rounded-3xl "
         }
       />
-      <blockquote className="absolute z-1 left-60 bottom-20 scale-110">
+      <blockquote className="absolute z-1 left-60 bottom-30 scale-110">
         <p>“To me, photography is an art of observation.”</p>
         <p className="text-end">對我來說，攝影是觀察的藝術。</p>
         <footer className="text-end">
