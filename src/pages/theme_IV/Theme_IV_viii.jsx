@@ -23,7 +23,7 @@ const Theme_IV_viii = ({ style }) => {
       ></span>
 
       {/* （SCN / Scene） */}
-      <div className={`theme_iv_text ${style.div1}`}>
+      <div className={`theme_iv_text theme_context ${style.div1}`}>
         <h3>
           SCN / Scene<span className="h3-span">（場景模式）</span>
         </h3>

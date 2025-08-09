@@ -31,14 +31,14 @@ const Theme_III_vii = ({ items_style }) => {
         alt={"theme_III背景"}
         className={items_style.s2}
       />
-      <div className="theme_III_text flex flex-col gap-4">
+      <div className="theme_III_text flex flex-col gap-4 theme_context">
         <div className={card} onClick={() => handleToggle("result")}>
           <h3>總結</h3>
 
           <ul
-            className={`flex flex-col gap-2 transition duration-500 ${
+            className={`flex flex-col justify-center gap-2 transition-all duration-500 ${
               isToggle.result
-                ? "opacity-100 w-150 max-h-50 "
+                ? "opacity-100 w-150 h-50 "
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >
@@ -84,9 +84,9 @@ const Theme_III_vii = ({ items_style }) => {
           {/* （適合做成 Tips 小提示框） */}
           <h3>💡小技巧：</h3>
           <ul
-            className={`flex flex-col gap-2 transition  duration-500 ${
+            className={`flex flex-col justify-center  gap-2 transition  duration-500 ${
               isToggle.tips
-                ? "opacity-100 w-150 max-h-50"
+                ? "opacity-100 w-150 h-50"
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >

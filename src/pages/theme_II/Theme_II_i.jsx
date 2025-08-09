@@ -3,7 +3,10 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_II_i = ({ isToggle }) => {
   return (
-    <section id="" className="theme_II_item w-full flex flex-col gap-4 ">
+    <section
+      id=""
+      className="theme_II_item theme_II_i w-full flex flex-col gap-4 "
+    >
       <div className="absolute z-1 bg-white/70 rounded-3xl w-200 border-8 border-white/50 top-1/2 right-20 -translate-x-15 -translate-y-1/2 overflow-hidden">
         <ContainerBg
           src={"/project-photography/theme_II_i.webp"}

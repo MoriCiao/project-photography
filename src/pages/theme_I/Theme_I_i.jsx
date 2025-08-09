@@ -2,25 +2,6 @@ import React, { useEffect } from "react";
 import ContainerBg from "../../components/containerBg";
 
 const Theme_I_i = ({ isToggle, setIsToggle }) => {
-  useEffect(() => {
-    const imgs = document.querySelectorAll(".theme-bg");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((enter) => {
-          if (enter.isIntersecting) {
-            enter.target.classList.add("scale-110");
-            observer.unobserve(enter.target);
-          }
-        });
-      },
-      { threshold: 0.7 }
-    );
-
-    imgs.forEach((img) => observer.observe(img));
-
-    return () => observer.disconnect();
-  }, []);
   return (
     <section className="theme_I_i w-full flex flex-col gap-4 text-white">
       <div className="absolute top-0 left-0 w-full h-full z-1 bg-gradient-to-r from-black via-black/50 to-black/10"></div>

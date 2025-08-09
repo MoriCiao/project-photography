@@ -222,12 +222,14 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   overflow: hidden;
 }
 .theme_IV_item .theme_iv_text {
-  transform: translate(-2rem, -2rem);
+  transform: translate(0rem, 0rem);
   border: 1px solid transparent;
   transition: all 1s ease-in-out;
-  padding: 0rem;
+  width: 100%;
+  height: 100%;
 }
 .theme_IV_item .theme_iv_text h3 {
+  transition: all 0.6s ease-in-out;
   font-size: 1.5rem;
 }
 .theme_IV_item .theme_iv_text .description {
@@ -236,12 +238,10 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   font-size: 1rem;
 }
 .theme_IV_item:hover .theme_iv_text {
-  scale: 1.05;
-  transform: translateX(20px);
-  padding: 0.3rem 1rem 1rem 1rem;
-  border-radius: 0.25rem;
-  border: rgba(255, 255, 255, 0.3) solid 1px;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+.theme_IV_item:hover .theme_iv_text h3 {
+  font-size: 2rem;
 }
 .theme_IV_item:hover .theme_iv_text .description {
   opacity: 1;
@@ -308,14 +308,14 @@ html, body {
 }
 html .theme_I_i,
 html .theme_II_i,
-html .theme_I_iii,
-html .theme_I_iv,
-html .theme_I_v, body .theme_I_i,
+html .theme_III_i,
+html .theme_IV_i,
+html .theme_V_i, body .theme_I_i,
 body .theme_II_i,
-body .theme_I_iii,
-body .theme_I_iv,
-body .theme_I_v {
-  padding: 8rem !important;
+body .theme_III_i,
+body .theme_IV_i,
+body .theme_V_i {
+  padding: 4rem !important;
 }
 html .theme h1, body .theme h1 {
   position: relative;
@@ -330,10 +330,15 @@ html .theme li::before, body .theme li::before {
   content: "🔸";
 }
 html .theme section, body .theme section {
-  padding: 3.5rem;
   height: 100%;
 }
 
 .h3-span {
   font-size: 1.15rem;
+}
+
+.theme_context {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -19,7 +19,7 @@ const Theme_III_vi = ({ items_style }) => {
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
 
-      <div className="theme_III_text">
+      <div className="theme_III_text theme_context">
         <h3>
           Face / Eye Detection AF
           <span className="h3-span">（臉部 / 眼控對焦）</span>

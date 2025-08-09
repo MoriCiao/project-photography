@@ -22,7 +22,7 @@ const Theme_IV_v = ({ style }) => {
         id="theme_IV_v"
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
-      <div className={`theme_iv_text ${style.div1}`}>
+      <div className={`theme_iv_text theme_context ${style.div1}`}>
         <h3>
           S / Tv – Shutter Priority
           <span className="h3-span">（快門先決模式）</span>

@@ -20,7 +20,7 @@ const Theme_III_i = () => {
         </footer>
       </blockquote>
 
-      <div className="relative z-1 flex flex-col gap-4">
+      <div className=" relative z-1 flex flex-col gap-4">
         <h1>
           Focus Modes <span className="text-[1.25rem]">（對焦模式）</span>
         </h1>

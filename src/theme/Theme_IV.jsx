@@ -12,24 +12,10 @@ import Theme_IV_viii from "../pages/theme_IV/Theme_IV_viii";
 const Theme_IV = () => {
   const style = {
     section:
-      "border-4 border-white/20 rounded-sm hover:border-2 hover:border-white/50",
-    div1: "relative z-2 w-[90%] h-full ",
+      "border-4 border-white/20 rounded-sm hover:border-2 hover:border-white/50 flex items-center justify-center",
+    div1: "relative z-2 ",
     div2: "description flex flex-col gap-4",
   };
-
-  // const handleToggle = (name) => {
-  //   setIsToggle({ name: name, [name]: !isToggle[name] });
-  // };
-
-  // const list = [
-  //   "theme_IV_ii",
-  //   "theme_IV_iii",
-  //   "theme_IV_iv",
-  //   "theme_IV_v",
-  //   "theme_IV_vi",
-  //   "theme_IV_vii",
-  //   "theme_IV_viii",
-  // ];
 
   return (
     <article id="theme_IV" className="theme themeIV bg-black text-white pb-12">

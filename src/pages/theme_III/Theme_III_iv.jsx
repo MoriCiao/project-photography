@@ -19,7 +19,7 @@ const Theme_III_iv = ({ items_style }) => {
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
 
-      <div className="theme_III_text">
+      <div className="theme_III_text theme_context">
         <h3>
           AF-A / AI Focus
           <span className="h3-span">（自動切換對焦）</span>

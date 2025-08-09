@@ -29,7 +29,7 @@ import Theme_III_vii from "../pages/theme_III/Theme_III_vii";
 
 const items_style = {
   group_style:
-    "border-4 rounded-md border-white/70 hover:border-2  hover:border-white/100 !p-[2rem]",
+    "border-4 rounded-md border-white/70 hover:border-2  hover:border-white/100 ",
   s1: `absolute z-1 bottom-4 right-0 w-120 object-cover transition-all duration-1000 -translate-y-10  opacity-100 -rotate-20 brightness-80 group-hover:-rotate-10 blur-[3px] group-hover:blur-[0px] select-none`,
   s2: `absolute z-0 top-0 left-0 w-full h-full object-cover transition duration-1500 -translate-y-0 -rotate-0 translate-0 opacity-50 brightness-50 group-hover:brightness-30 group-hover:scale-120 group-hover:blur-[3px] overflow-hidden `,
 };

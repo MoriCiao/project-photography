@@ -17,7 +17,7 @@ const Theme_V_vi = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
         }
       />
 
-      <div className={`theme_V-text flex flex-col gap-4`}>
+      <div className={`theme_V-text theme_context flex flex-col gap-4`}>
         <h3>總結</h3>
         <div className={animate}>
           <ul className="flex flex-col gap-4">

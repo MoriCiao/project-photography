@@ -22,7 +22,7 @@ const Theme_IV_iii = ({ style }) => {
         id="theme_IV_iii"
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
-      <div className={`theme_iv_text ${style.div1} `}>
+      <div className={`theme_iv_text theme_context ${style.div1} `}>
         <h3>
           M – Manual <span className="h3-span">（全手動模式）</span>
         </h3>

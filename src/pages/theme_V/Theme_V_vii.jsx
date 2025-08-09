@@ -20,7 +20,7 @@ const Theme_V_vii = ({
           "absolute -z-0 top-0 left-0 w-full h-[100%] object-cover brightness-60 blur-[2px] "
         }
       />
-      <div className={`theme_V-text flex flex-col gap-4`}>
+      <div className={`theme_V-text theme_context flex flex-col gap-4`}>
         {/* （適合做成 Tips 小提示框） */}
         <h3>💡小技巧：</h3>
         <div className={animate}>

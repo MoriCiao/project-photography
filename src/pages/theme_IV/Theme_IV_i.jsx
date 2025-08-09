@@ -2,29 +2,8 @@ import React, { useEffect } from "react";
 import Theme_IV_ii from "./theme_IV_ii";
 import ContainerBg from "../../components/containerBg";
 const Theme_IV_i = () => {
-  useEffect(() => {
-    const imgs = document.querySelectorAll(".theme_IV_i-bg");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((enter) => {
-          if (enter.isIntersecting) {
-            enter.target.classList.add("scale-120");
-          } else {
-            enter.target.classList.remove("scale-120");
-          }
-        });
-      },
-      { threshold: 0.75 }
-    );
-
-    imgs.forEach((img) => observer.observe(img));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section className="theme_IV_i flex justify-between">
+    <section className="theme_IV_i w-full h-full">
       <div className="theme_IV_i-bg absolute -z-0 bottom-20 left-120  w-100  transition duration-1000">
         <div className="bg-radial relative z-1 w-100 h-full"></div>
         <ContainerBg
@@ -43,7 +22,7 @@ const Theme_IV_i = () => {
         </footer>
       </blockquote>
 
-      <div className="grid grid-cols-2 gap-4 relative z-3">
+      <div className="grid grid-cols-2 gap-4 relative z-3 w-full h-full">
         <div className="w-full h-full">
           <h1>
             Shooting Modes<span className="text-[1.25rem]">（拍攝模式）</span>{" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
-import ScrollScaleImage from "./ScrollScaleImage";
+
 import heroImg from "../assets/hero.webp";
 const Header = () => {
   return (

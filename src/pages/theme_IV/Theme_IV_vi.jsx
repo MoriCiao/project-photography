@@ -24,7 +24,7 @@ const Theme_IV_vi = ({ style }) => {
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
 
-      <div className={`theme_iv_text ${style.div1}`}>
+      <div className={`theme_iv_text theme_context ${style.div1}`}>
         <h3>
           P – Program Mode<span className="h3-span">（程式自動模式）</span>
         </h3>

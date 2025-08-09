@@ -35,7 +35,7 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
         } absolute  top-0 right-0  w-[100%] h-[100%] transition duration-1500`}
       ></div>
 
-      <div className="flex flex-col gap-4">
+      <div className="theme_context flex flex-col gap-4">
         <h3>什麼是白平衡？</h3>
 
         <ul

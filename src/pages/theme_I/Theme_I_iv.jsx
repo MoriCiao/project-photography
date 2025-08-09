@@ -16,6 +16,7 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         })
       }
     >
+      {/* # 滑動 spot */}
       <div className="absolute -top-20 left-0 text-white border w-200">
         <span id="iso"></span>
       </div>
@@ -25,11 +26,15 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.iso
-            ? "absolute left-0 top-0 scale-200 -translate-x-100"
-            : "absolute left-0 top-0 "
-        } object-cover w-full h-full opacity-20`}
+            ? " left-0 top-0 scale-200 -translate-x-100"
+            : "left-0 top-0 "
+        } absolute object-cover w-full h-full opacity-20`}
       />
-      <div className={`grid ${isToggle.iso ? "grid-cols-2" : "grid-cols-1"}`}>
+      <div
+        className={`grid  w-full h-full ${
+          isToggle.iso ? "grid-cols-2" : "grid-cols-1"
+        }`}
+      >
         <div
           className={`${
             isToggle.iso ? "theme_I_open" : "theme_I_close"
@@ -51,10 +56,11 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
           </div>
         </div>
 
+        {/* ISO 圖片 */}
         <span
           className={`${
             isToggle.iso ? "opacity-100" : "opacity-0"
-          } m-auto max-w-120 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+          } m-auto max-w-120 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden `}
         >
           <img src="/project-photography/theme_I_iv.webp" alt="iso" />
         </span>

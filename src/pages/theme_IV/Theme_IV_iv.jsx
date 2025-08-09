@@ -21,7 +21,7 @@ const Theme_IV_iv = ({ style }) => {
       ></span>
 
       {/* （A / Av – Aperture Priority） */}
-      <div className={`theme_iv_text ${style.div1}`}>
+      <div className={`theme_iv_text theme_context ${style.div1}`}>
         <h3>
           A / Av – Aperture Priority
           <span className="h3-span">（光圈先決模式）</span>

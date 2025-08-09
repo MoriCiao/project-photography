@@ -19,12 +19,12 @@ html,body{
     box-sizing: border-box;
     cursor: pointer;
     .theme_I_i,
-        .theme_II_i,
-        .theme_I_iii,
-        .theme_I_iv,
-        .theme_I_v {
-            padding: 8rem !important;
-        }
+    .theme_II_i,
+    .theme_III_i,
+    .theme_IV_i,
+    .theme_V_i {
+        padding: 4rem !important;
+    }
     .theme{
         
         h1{
@@ -44,7 +44,6 @@ html,body{
             
         }
         section{
-            padding: 3.5rem;
             height: 100%;
         }
         
@@ -56,4 +55,11 @@ html,body{
 
 .h3-span {
     font-size: 1.15rem;
+}
+
+.theme_context{
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+
 }
