@@ -57,13 +57,17 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         </div>
 
         {/* ISO 圖片 */}
-        <span
+        <div
           className={`${
             isToggle.iso ? "opacity-100" : "opacity-0"
-          } m-auto max-w-120 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden `}
+          } w-full h-full flex transition duration-1000  rounded-xl overflow-hidden `}
         >
-          <img src="/project-photography/theme_I_iv.webp" alt="iso" />
-        </span>
+          <img
+            src="/project-photography/theme_I_iv.webp"
+            alt="iso"
+            className="object-fit h-full p-2 rounded-xl m-auto  bg-white/80"
+          />
+        </div>
       </div>
     </section>
   );

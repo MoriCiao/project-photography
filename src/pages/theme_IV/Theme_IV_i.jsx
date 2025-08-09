@@ -23,7 +23,7 @@ const Theme_IV_i = () => {
       </blockquote>
 
       <div className="grid grid-cols-2 gap-4 relative z-3 w-full h-full">
-        <div className="w-full h-full">
+        <div className="w-full h-full flex flex-col gap-4">
           <h1>
             Shooting Modes<span className="text-[1.25rem]">（拍攝模式）</span>{" "}
           </h1>

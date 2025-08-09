@@ -30,9 +30,9 @@ const Theme_V_iii = ({
       {/* 常見焦段分類與特色 */}
 
       <div className="grid grid-cols-2 gap-4 w-full h-full">
-        <div className="theme_V-text theme_context flex flex-col gap-4">
+        <div className="theme_V-text theme_context flex flex-col gap-4 h-auto">
           <h3>常見焦段分類與特色</h3>
-          <div className={` ${animate} py-8`}>
+          <div className={` ${animate}`}>
             <table className={style.table}>
               <thead>
                 <tr className={style.tr1}>
