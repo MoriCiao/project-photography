@@ -24,8 +24,10 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
         src={"/project-photography/theme_II_ii.webp"}
         alt={"theme_II背景"}
         className={`${
-          isToggle.theme_II_ii ? "block p-4 max-w-150 " : "hidden p-0 w-[100%]"
-        }   absolute top-1/2 right-0   border border-black  transition-all duration-1000 -translate-y-1/2`}
+          isToggle.theme_II_ii
+            ? "block p-4 xl:max-w-150 lg:max-w-120 sm:max-w-80 md:block hidden  "
+            : "hidden p-0 w-[100%]"
+        }   absolute lg:top-1/2 lg:right-0 md:bottom-0 md:right-1/2 md:translate-x-1/2 lg:translate-x-0 border border-black  transition-all duration-1000 lg:-translate-y-1/2`}
       />
       <div
         className={`${

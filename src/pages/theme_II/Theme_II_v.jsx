@@ -16,13 +16,13 @@ const Theme_II_v = ({ isToggle, setIsToggle, handleToggle }) => {
         } opacity-100 `}
       />
       {/* RAW 拍攝與後製白平衡 */}
-      <div className="theme_context flex flex-col gap-4">
+      <div className="theme_context flex flex-col sm:gap-4">
         <h3>RAW 拍攝與後製白平衡</h3>
         <div
           className={` ${
             isToggle.theme_II_v
-              ? "opacity-100 w-full text-[1rem]"
-              : "opacity-0 h-30 w-0"
+              ? "opacity-100 w-full h-auto text-[1rem] md:p-0 p-4"
+              : "opacity-0 h-30 w-full"
           } transition-all duration-500`}
         >
           <ul>

@@ -6,7 +6,7 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
     <section
       className={`${
         isToggle.name === "iso" && isToggle.iso === true
-          ? "toggle -translate-x-150"
+          ? "toggle xl:-translate-x-150 lg:-translate-x-90"
           : "not-toggle "
       } iso h-full p-8 text-start flex flex-col gap-2 items-center justify-center overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
       onClick={() =>
@@ -26,18 +26,20 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.iso
-            ? " left-0 top-0 scale-200 -translate-x-100"
+            ? " left-0 top-0 sm:scale-200 sm:-translate-x-100"
             : "left-0 top-0 "
         } absolute object-cover w-full h-full opacity-20`}
       />
       <div
         className={`grid  w-full h-full ${
-          isToggle.iso ? "grid-cols-2" : "grid-cols-1"
+          isToggle.iso
+            ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
+            : "grid-cols-1"
         }`}
       >
         <div
           className={`${
-            isToggle.iso ? "theme_I_open" : "theme_I_close"
+            isToggle.iso ? "lg:theme_I_open" : "lg:theme_I_close"
           } transtion drutiona-1000 flex flex-col gap-4`}
         >
           <h3 className="">ISO 感光度</h3>
@@ -47,7 +49,13 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
             <li>ISO 越低 → 畫質乾淨，但亮度低</li>
             <li>ISO 越高 → 亮度提升，但容易產生噪點</li>
           </ul>
-          <div className="">
+          <div
+            className={`${
+              isToggle.aperture
+                ? "sm:opacity-100 opacity-100"
+                : "sm:opacity-100 opacity-0"
+            } transition duration-800`}
+          >
             <p>💡小技巧：</p>
             <ul>
               <li>優先保持 ISO 低，除非快門和光圈都無法再調整。</li>
@@ -60,12 +68,12 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         <div
           className={`${
             isToggle.iso ? "opacity-100" : "opacity-0"
-          } w-full h-full flex transition duration-1000  rounded-xl overflow-hidden `}
+          } lg:w-full lg:h-full flex transition duration-1000  rounded-xl lg:overflow-hidden `}
         >
           <img
             src="/project-photography/theme_I_iv.webp"
             alt="iso"
-            className="object-fit h-full p-2 rounded-xl m-auto  bg-white/80"
+            className="object-fit lg:h-full p-2 rounded-xl m-auto  bg-white/80"
           />
         </div>
       </div>

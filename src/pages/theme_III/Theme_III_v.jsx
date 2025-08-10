@@ -19,7 +19,7 @@ const Theme_III_v = ({ items_style }) => {
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
       <div className="theme_III_text theme_context">
-        <h3>
+        <h3 className="flex md:flex-row flex-col md:items-end">
           Manual Focus / MF
           <span className="h3-span">（手動對焦）</span>
         </h3>

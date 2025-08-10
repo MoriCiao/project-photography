@@ -26,7 +26,12 @@ const Theme_I = () => {
         <Theme_I_i isToggle={isToggle} setIsToggle={setIsToggle} />
       </Container_I>
       {/* ------------------------ */}
-      <Container_III flex="flex flex-col" w="w-full" h="h-screen" h2="h-screen">
+      <Container_III
+        w="w-full "
+        h="lg:h-screen h-150 "
+        h2="h-screen "
+        className="lg:flex-row flex-col"
+      >
         <Theme_I_ii isToggle={isToggle} setIsToggle={setIsToggle} />
         <Theme_I_iii isToggle={isToggle} setIsToggle={setIsToggle} />
         <Theme_I_iv isToggle={isToggle} setIsToggle={setIsToggle} />

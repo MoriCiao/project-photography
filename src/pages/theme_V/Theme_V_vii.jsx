@@ -7,7 +7,7 @@ const Theme_V_vii = ({
   handleToggle,
   openAnimation,
 }) => {
-  const animate = openAnimation("theme_V_vii", "h-50");
+  const animate = openAnimation("theme_V_vii", "md:h-50 h-auto");
   return (
     <section
       className="theme_V_item flex border items-start justify-start gap-8"

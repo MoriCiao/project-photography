@@ -22,7 +22,7 @@ const Theme_III_ii = ({ items_style }) => {
       ></span>
 
       <div className="theme_III_text theme_context">
-        <h3>
+        <h3 className="flex md:flex-row flex-col md:items-end">
           Single AF / One-Shot AF{" "}
           <span className="h3-span">（單次自動對焦）</span>
         </h3>

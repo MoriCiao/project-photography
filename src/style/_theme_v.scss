@@ -10,7 +10,7 @@
             td,
             th {
                 border: white 1px solid;
-                padding: 0.75rem 1.5rem;
+                padding: 0.5rem 1.5rem;
             }
         }
 
@@ -20,4 +20,64 @@
         
     }
         
+}
+
+
+.themeV{
+    @media (max-width:768px) {
+        h1{
+            font-size: 2rem !important;
+        }
+        h3 {
+            font-size: 1.5rem !important;
+            font-weight: 900;
+        }
+
+        h4,
+        p,
+        li {
+            font-size: 1rem;
+        }
+
+        .theme_context {
+            padding: 1rem;
+        }
+    }
+    @media (max-width:480px) {}
+}
+.theme_V_item{
+    padding: 2rem;
+    @media (max-width:768px) {
+        padding: 1rem;
+       
+    }
+    @media (max-width:480px) {
+        padding: 0.5rem;
+    }
+}
+.theme_V_item{
+    @media (max-width:1024px) {
+        table {
+            font-size: 1rem !important;
+            margin: auto;
+            td,
+            th {
+                padding: 0.5rem !important;
+    
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        
+        table{
+            font-size: 0.8rem !important;
+            td,th{
+                padding: 0.5rem !important;
+                
+            }
+        }
+    }
+
+    
 }

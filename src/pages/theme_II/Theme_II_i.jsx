@@ -5,9 +5,9 @@ const Theme_II_i = ({ isToggle }) => {
   return (
     <section
       id=""
-      className="theme_II_item theme_II_i w-full flex flex-col gap-4 "
+      className="theme_II_item theme_II_i w-full flex flex-col gap-4 sm:!p-16 !p-4"
     >
-      <div className="absolute z-1 bg-white/70 rounded-3xl w-200 border-8 border-white/50 top-1/2 right-20 -translate-x-15 -translate-y-1/2 overflow-hidden">
+      <div className="lg:block hidden absolute z-1 bg-white/70 rounded-3xl 2xl:w-200 xl:w-150 w-100 border-8 border-white/50 top-1/2 right-20 -translate-x-15 -translate-y-1/2 overflow-hidden ">
         <ContainerBg
           src={"/project-photography/theme_II_i.webp"}
           alt={"theme_II背景"}
@@ -18,10 +18,10 @@ const Theme_II_i = ({ isToggle }) => {
         src={"/project-photography/theme_II_i-1.webp"}
         alt={"theme_II背景"}
         className={
-          " absolute z-0 top-0 left-0 blur-[3px] brightness-60  w-[100%] rounded-3xl "
+          " absolute z-0 top-0 left-0 blur-[3px] brightness-60  sm:w-full sm:h-full h-full object-cover  rounded-3xl "
         }
       />
-      <blockquote className="absolute z-1 left-60 bottom-30 scale-110">
+      <blockquote className="absolute z-1 md:left-60 left-0 flex flex-col md:justity-end justity-center md:items-end items-center bottom-30 md:scale-110 md:w-auto sm:text-start text-center w-full">
         <p>“To me, photography is an art of observation.”</p>
         <p className="text-end">對我來說，攝影是觀察的藝術。</p>
         <footer className="text-end">
@@ -29,11 +29,12 @@ const Theme_II_i = ({ isToggle }) => {
           — <cite>Elliott Erwitt</cite>
         </footer>
       </blockquote>
+
       <div className="theme_context w-full flex flex-col gap-4 relative z-10">
         <h1>
           White Balance <span className="text-[1.25rem]">（白平衡）</span>
         </h1>
-        <p className="flex flex-col space-y-4">
+        <p className="sm:flex hidden flex-col space-y-4">
           <span>
             白平衡是攝影中用來調整色溫，讓影像呈現自然色彩的關鍵設定。
           </span>

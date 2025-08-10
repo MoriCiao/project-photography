@@ -10,7 +10,7 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         isToggle.name === "aperture" && isToggle.aperture === true
           ? "toggle "
           : "not-toggle"
-      } aperture h-full p-8 text-start flex flex-col gap-2 overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
+      } aperture lg:h-full p-8 text-start flex flex-col gap-2 overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
       onClick={() =>
         setIsToggle({ name: "aperture", aperture: !isToggle.aperture })
       }
@@ -24,17 +24,21 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.aperture
-            ? "absolute left-0 top-0 scale-200 -translate-x-100"
+            ? "absolute left-0 top-0 sm:scale-200 sm:-translate-x-100"
             : "absolute left-0 top-0 "
         } object-cover w-full h-full opacity-20`}
       />
 
       <div
-        className={`grid ${isToggle.aperture ? "grid-cols-2" : "grid-cols-1"}`}
+        className={`grid ${
+          isToggle.aperture
+            ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
+            : "grid-cols-1"
+        }`}
       >
         <div
           className={`${
-            isToggle.aperture ? "theme_I_open" : "theme_I_close"
+            isToggle.aperture ? "lg:theme_I_open" : "lg:theme_I_close"
           } transtion drutiona-1000 flex flex-col gap-4`}
         >
           <h3>光圈（Aperture / f 值）</h3>
@@ -44,7 +48,13 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
             <li>光圈大（f 小）→ 背景模糊、進光多</li>
             <li>光圈小（f 大）→ 景深廣、進光少</li>
           </ul>
-          <div>
+          <div
+            className={`${
+              isToggle.aperture
+                ? "sm:opacity-100 opacity-100"
+                : "sm:opacity-100 opacity-0"
+            } transition duration-800`}
+          >
             <p>💡小技巧：</p>
             <ul>
               <li>大光圈讓背景柔化，強調主體。 </li>
@@ -56,12 +66,12 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         <span
           className={`${
             isToggle.aperture ? "opacity-100" : "opacity-0"
-          } m-auto max-w-150 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+          } m-auto lg:max-w-150 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
         >
           <img
             src="/project-photography/apertrue-3.webp"
             alt="apertrue-2"
-            className="max-w-150 object-fit"
+            className="w-full object-fit"
           />
         </span>
       </div>

@@ -7,13 +7,13 @@ const Theme_IV_iv = ({ style }) => {
         src={"/project-photography/theme-item-bg.webp"}
         alt={"theme_III背景"}
         className={
-          "absolute -z-0 top-0 left-0 w-full brightness-60 blur-[2px] "
+          "absolute -z-0 top-0 left-0 w-full h-full object-cover brightness-60 blur-[2px] "
         }
       />
       <ContainerBg
         src={"/project-photography/theme_IV_iv-item-text.webp"}
         alt={"theme_III背景"}
-        className={"theme_IV_item-text translate-x-10"}
+        className={"theme_IV_item-text sm:translate-x-10 md:block hidden"}
       />
       <span
         id="theme_IV_iv"

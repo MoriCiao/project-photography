@@ -15,17 +15,17 @@ const Theme_II_vii = ({ isToggle, setIsToggle, handleToggle }) => {
           isToggle.theme_II_vii ? "brightness-30 " : "brightness-60 "
         } opacity-100 `}
       />
-      <div className="theme_context flex flex-col gap-4">
+      <div className="theme_context flex flex-col sm:gap-4">
         {/* （適合做成 Tips 小提示框） */}
         <h3>💡小技巧：</h3>
         <div
           className={` ${
             isToggle.theme_II_vii
-              ? "opacity-100 w-full text-[1rem]"
-              : "opacity-0 h-30 w-0"
-          } transition-all duration-500`}
+              ? "opacity-100 w-full text-[1rem] sm:h-auto h-50 md:p-0"
+              : "opacity-0 h-30 w-full "
+          } transition-all duration-500 `}
         >
-          <ul>
+          <ul className="flex flex-col !gap-2 h-auto">
             <li>室內拍攝容易偏黃，建議調整為「白熾燈」或「手動設定」白平衡</li>
             <li>想要溫暖氛圍可故意用「陰天」或「Cloudy」模式</li>
             <li>

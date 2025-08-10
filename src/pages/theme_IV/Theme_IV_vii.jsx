@@ -14,7 +14,7 @@ const Theme_IV_vii = ({ style }) => {
       <ContainerBg
         src={"/project-photography/theme_IV_vii-item-text.webp"}
         alt={"theme_III背景"}
-        className={"theme_IV_item-text"}
+        className={"theme_IV_item-text md:block hidden"}
       />
       <span
         id="theme_IV_vii"

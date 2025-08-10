@@ -3,20 +3,22 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_V_i = () => {
   return (
-    <section className="theme_V_i">
-      <div className="absolute z-1 top-0 left-0 w-full h-full bg-gradient-to-r from-black via-black/100 to-transparent"></div>
+    <section className="theme_V_i  sm:!p-16 !p-4">
+      <div className="absolute z-1 top-0 left-0 w-full h-full bg-gradient-to-r from-black sm:via-black/100 to-transparent"></div>
       <ContainerBg
         src={"/project-photography/theme_V_i.webp"}
         alt={"theme_V背景"}
         className={
-          "theme-bg absolute -z-0 top-0 right-0 w-300 h-full object-cover brightness-60 blur-[0px] "
+          "theme-bg absolute -z-0 top-0 sm:right-0 left-0 sm:w-300 w-full h-full object-cover object-right sm:brightness-60 brightness-30 blur-[0px] "
         }
       />
 
-      <blockquote className="absolute z-1 left-150 bottom-40 scale-110">
+      <blockquote className="absolute z-1 xl:right-150 lg:right-80 right-0 lg:bottom-40 lg:scale-110  bottom-20  lg:-translate-x-0  lg:w-auto w-full xl:text-end  text-center">
         <p>“Seeing is not enough; you have to feel what you photograph.”</p>
-        <p className="text-end">光看到還不夠，你必須感受到你所拍攝的東西。</p>
-        <footer className="text-end">
+        <p className="lg:text-end text-center">
+          光看到還不夠，你必須感受到你所拍攝的東西。
+        </p>
+        <footer className="lg:text-end text-center">
           {" "}
           — <cite>André Kertész</cite>
         </footer>

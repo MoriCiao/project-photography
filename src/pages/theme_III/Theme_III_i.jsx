@@ -3,18 +3,20 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_III_i = () => {
   return (
-    <section className="theme_III_item theme_III_i">
-      <div className="absolute z-0 rounded-3xl top-1/2 right-0 -translate-x-60 -translate-y-1/2 overflow-hidden">
+    <section className="theme_III_item theme_III_i sm:!p-16 !p-4">
+      <div className="absolute z-0 rounded-3xl xl:top-1/2 md:top-0 top-10 right-0 md:brightness-100 brightness-30 xl:-translate-x-60 xl:-translate-y-1/2 md:-translate-x-0 md:-translate-y-0 overflow-hidden ">
         <ContainerBg
           src={"/project-photography/theme_III_i.webp"}
           alt={"theme_II背景"}
           className={"theme-bg w-[100%] rounded-3xl "}
         />
       </div>
-      <blockquote className="absolute z-1 right-60 bottom-40 scale-110">
+      <blockquote className="absolute z-1 xl:right-60 xl:translate-x-0 right-1/2 translate-x-1/2 md:text-start text-center  md:w-auto w-full sm:bottom-40 bottom-5 xl:scale-110">
         <p>“When words become unclear, I shall focus with photographs.”</p>
-        <p className="text-end">當言語變得模糊時，我將用照片對焦。</p>
-        <footer className="text-end">
+        <p className="md:text-end  text-center">
+          當言語變得模糊時，我將用照片對焦。
+        </p>
+        <footer className="md:text-end  text-center">
           {" "}
           — <cite> Ansel Adams</cite>
         </footer>

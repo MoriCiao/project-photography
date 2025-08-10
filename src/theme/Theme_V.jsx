@@ -24,13 +24,13 @@ const Theme_V = () => {
   function openAnimation(name, h) {
     return `${
       isToggle.name === name && isToggle[name] === true
-        ? `opacity-100 ${h} max-h-150`
+        ? `opacity-100 ${h}`
         : "opacity-0 h-10"
     } transition-all duration-800`;
   }
 
   const style = {
-    table: "bg-gray-800",
+    table: "bg-gray-800 h-auto overflow-y-auto",
     tr1: "bg-black/25 ",
     tr2: "odd:bg-sky-900/20  even:bg-slate-900/20  hover:odd:bg-sky-500/50  hover:even:bg-slate-500/50",
   };
@@ -81,7 +81,7 @@ const Theme_V = () => {
             openAnimation={openAnimation}
           />
         </Container_I>
-        <div className="flex gap-8 w-[90%]">
+        <div className="flex md:flex-row flex-col  gap-8 w-[90%]">
           <Container_I w="w-[100%]" h="h-atuo">
             <Theme_V_vi
               isToggle={isToggle}

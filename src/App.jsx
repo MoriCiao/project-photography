@@ -40,7 +40,6 @@ const App = () => {
       (entries) => {
         entries.forEach((enter) => {
           if (enter.isIntersecting) {
-            console.log("動畫中...");
             enter.target.classList.add("scale-110");
             observer.unobserve(enter.target);
           }

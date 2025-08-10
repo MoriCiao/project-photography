@@ -36,16 +36,16 @@ const Theme_III_vii = ({ items_style }) => {
           <h3>總結</h3>
 
           <ul
-            className={`flex flex-col justify-center gap-2 transition-all duration-500 ${
+            className={`flex flex-col justify-center sm:gap-2  transition-all duration-500 ${
               isToggle.result
-                ? "opacity-100 w-150 h-50 "
+                ? "opacity-100 sm:w-150 w-auto h-50 "
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 w-150 max-h-50 "
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
                   : "opacity-0  h-0"
               }`}
             >
@@ -54,7 +54,7 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 w-150 max-h-50 "
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
                   : "opacity-0  h-0"
               }`}
             >
@@ -63,7 +63,7 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 w-150 max-h-50 "
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
                   : "opacity-0  h-0"
               }`}
             >
@@ -72,7 +72,7 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 w-150 max-h-50 "
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
                   : "opacity-0  h-0"
               }`}
             >
@@ -84,43 +84,53 @@ const Theme_III_vii = ({ items_style }) => {
           {/* （適合做成 Tips 小提示框） */}
           <h3>💡小技巧：</h3>
           <ul
-            className={`flex flex-col justify-center  gap-2 transition  duration-500 ${
+            className={`flex flex-col justify-center sm:gap-2 transition  duration-500 ${
               isToggle.tips
-                ? "opacity-100 w-150 h-50"
+                ? "opacity-100 sm:w-150 w-auto sm:h-50 "
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >
             <li
               className={`transition duration-500 ${
-                isToggle.tips ? "opacity-100 w-150 max-h-50 " : "opacity-0  h-0"
+                isToggle.tips
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
+                  : "opacity-0  h-0"
               }`}
             >
               「靜的用單次，動的用連續，特寫靠手動，人物選眼控。」
             </li>
             <li
               className={`transition duration-500 ${
-                isToggle.tips ? "opacity-100 w-150 max-h-50 " : "opacity-0  h-0"
+                isToggle.tips
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
+                  : "opacity-0  h-0"
               }`}
             >
               拍風景、商品 ➜ 用 單次對焦（AF-S）
             </li>
             <li
               className={`transition duration-500 ${
-                isToggle.tips ? "opacity-100 w-150 max-h-50 " : "opacity-0  h-0"
+                isToggle.tips
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
+                  : "opacity-0  h-0"
               }`}
             >
               拍小孩、動物、街頭動態 ➜ 用 連續對焦（AF-C）
             </li>
             <li
               className={`transition duration-500 ${
-                isToggle.tips ? "opacity-100 w-150 max-h-50 " : "opacity-0  h-0"
+                isToggle.tips
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
+                  : "opacity-0  h-0"
               }`}
             >
               拍微距細節 ➜ 用 手動對焦（MF） 更精準
             </li>
             <li
               className={`transition duration-500 ${
-                isToggle.tips ? "opacity-100 w-150 max-h-50 " : "opacity-0  h-0"
+                isToggle.tips
+                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
+                  : "opacity-0  h-0"
               }`}
             >
               拍人像 ➜ 開啟 眼控對焦（Eye AF），對焦更聰明！

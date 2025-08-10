@@ -8,13 +8,13 @@ const Theme_IV_v = ({ style }) => {
         src={"/project-photography/theme-item-bg.webp"}
         alt={"theme_III背景"}
         className={
-          "absolute -z-0 top-0 left-0 w-full brightness-60 blur-[2px] "
+          "absolute -z-0 top-0 left-0 w-full h-full object-cover brightness-60 blur-[2px] "
         }
       />
       <ContainerBg
         src={"/project-photography/theme_IV_v-item-text.webp"}
         alt={"theme_III背景"}
-        className={"theme_IV_item-text translate-x-10"}
+        className={"theme_IV_item-text sm:translate-x-10 md:block hidden"}
       />
 
       {/* （S / Tv – Shutter Priority） */}
@@ -22,6 +22,7 @@ const Theme_IV_v = ({ style }) => {
         id="theme_IV_v"
         className="absolute top-0 left-0 -translate-y-0"
       ></span>
+
       <div className={`theme_iv_text theme_context ${style.div1}`}>
         <h3>
           S / Tv – Shutter Priority

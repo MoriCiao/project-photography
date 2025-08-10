@@ -10,15 +10,15 @@ const Container_IV = ({
 }) => {
   return (
     <div
-      className={`container_III relative flex flex-col gap-4  items-center justify-center ${w} max-h-screen`}
+      className={`container_IV relative flex flex-col gap-4  items-center justify-center ${w} md:max-h-screen h-auto`}
     >
-      <div className=" flex gap-4 px-4 w-full  h-[60vh]">
+      <div className="  flex md:flex-row flex-col gap-4 px-4 w-full md:h-[60vh] h-auto">
         {children[0] && (
           <div
             className={`${
               isToggle.name === list[0] && isToggle[list[0]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_ii")}
           >
@@ -30,7 +30,7 @@ const Container_IV = ({
             className={`${
               isToggle.name === list[1] && isToggle[list[1]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all  duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_iii")}
           >
@@ -42,7 +42,7 @@ const Container_IV = ({
             className={`${
               isToggle.name === list[2] && isToggle[list[2]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_iv")}
           >
@@ -51,13 +51,13 @@ const Container_IV = ({
         )}
       </div>
 
-      <div className="flex gap-4 px-4 w-full h-[40vh]">
+      <div className="flex md:flex-row flex-col gap-4 px-4 w-full  md:max-h-[60vh] h-auto">
         {children[3] && (
           <div
             className={`${
               isToggle.name === list[3] && isToggle[list[3]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_v")}
           >
@@ -69,7 +69,7 @@ const Container_IV = ({
             className={`${
               isToggle.name === list[4] && isToggle[list[4]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_vi")}
           >
@@ -81,7 +81,7 @@ const Container_IV = ({
             className={`${
               isToggle.name === list[5] && isToggle[list[5]] === true
                 ? "w-[100%]"
-                : "w-1/3 "
+                : "md:w-1/3 w-full md:h-auto h-1/3"
             }  transition-all duration-1000 overflow-hidden border border-white/20`}
             onClick={() => handleToggle("theme_II_vii")}
           >

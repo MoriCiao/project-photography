@@ -15,13 +15,13 @@ const Theme_II_vi = ({ isToggle, setIsToggle, handleToggle }) => {
           isToggle.theme_II_vi ? "brightness-30 " : "brightness-60 "
         } opacity-100 `}
       />
-      <div className="theme_context flex flex-col gap-4">
+      <div className="theme_context flex flex-col sm:gap-4">
         <h3>總結</h3>
         <div
           className={` ${
             isToggle.theme_II_vi
-              ? "opacity-100 w-full text-[1rem]"
-              : "opacity-0 h-30 w-0"
+              ? "opacity-100 w-full text-[1rem] md:p-0 pt-0 pb-4"
+              : "opacity-0 h-30 w-full "
           } transition-all duration-500`}
         >
           <ul>

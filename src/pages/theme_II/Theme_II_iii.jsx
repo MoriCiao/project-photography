@@ -82,7 +82,7 @@ const Theme_II_iii = ({ isToggle, setIsToggle, handleToggle }) => {
               </tr>
             </tbody>
           </table>
-          <div className=" mt-6 w-[80%]">
+          <div className=" mt-6 md:w-[80%] w-full">
             <p className="w-full flex items-center justify-between">
               <span>Warm</span> <span>Neutral</span> <span>Cool</span>
             </p>

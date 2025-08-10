@@ -2,7 +2,7 @@ import React from "react";
 import ContainerBg from "../../components/containerBg";
 
 const Theme_V_ii = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
-  const animate = openAnimation("theme_V_ii", "h-60");
+  const animate = openAnimation("theme_V_ii", "lg:h-60 h-atuo");
 
   return (
     <section
@@ -22,7 +22,7 @@ const Theme_V_ii = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
         className="absolute -top-8 left-0 -translate-y-0"
       ></span>
       {/* （Focal Length） */}
-      <div className="grid grid-cols-2 gap-4 w-full h-full">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full h-full">
         <div className={`theme_V-text theme_context flex flex-col gap-4`}>
           <h3>什麼是焦段？（Focal Length）</h3>
 
@@ -46,8 +46,8 @@ const Theme_V_ii = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
         </div>
 
         <div
-          className={`relative z-2 transition-all duration-800  p-4  ${
-            isToggle.theme_V_ii ? "opacity-100  w-150" : "opacity-0  w-0"
+          className={`relative z-2 transition-all duration-800 p-4  ${
+            isToggle.theme_V_ii ? "opacity-100  xl:w-150" : "opacity-0  w-0"
           }`}
         >
           <ContainerBg

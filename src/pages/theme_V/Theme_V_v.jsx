@@ -2,7 +2,7 @@ import React from "react";
 import ContainerBg from "../../components/containerBg";
 
 const Theme_V_v = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
-  const animate = openAnimation("theme_V_v", "h-80");
+  const animate = openAnimation("theme_V_v", "xl:h-80 h-auto");
 
   return (
     <section className="theme_V_item" onClick={() => handleToggle("theme_V_v")}>
@@ -20,7 +20,7 @@ const Theme_V_v = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
       ></span>
 
       {/* 構圖與焦段的關係 */}
-      <div className="grid grid-cols-3 gap-4 w-full h-full border">
+      <div className="xl:grid xl:grid-cols-3 flex flex-col gap-4 w-full h-full border">
         <div className="theme_V-text theme_context col-start-1 col-span-1 flex flex-col gap-4 max-w-150">
           <h3>構圖與焦段的關係</h3>
 
@@ -37,32 +37,32 @@ const Theme_V_v = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
 
         {/*  */}
         <div
-          className={`col-start-2 col-span-2 relative z-2 grid grid-cols-4 justify-between transition-all duration-800 w-full my-auto   ${
-            isToggle.theme_V_v ? "h-80 opacity-100" : "h-0 opacity-0"
+          className={`xl:col-start-2 xl:col-span-2 relative z-2 grid sm:grid-cols-4 grid-cols-2  gap-4 justify-between transition-all duration-800 w-full my-auto   ${
+            isToggle.theme_V_v ? "sm:h-80 h-auto opacity-100" : "h-0 opacity-0"
           }`}
         >
-          <div className="overflow-hidden w-50 h-full border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
+          <div className="overflow-hidden xl:w-50 h-full border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
             <img
               src="/project-photography/theme_V_vii-p1.webp"
               alt="theme_V_vii-p1"
               className="object-cover w-full h-full group-hover:scale-110 transition duration-1000"
             />
           </div>
-          <div className="overflow-hidden w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
+          <div className="overflow-hidden xl:w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
             <img
               src="/project-photography/theme_V_vii-p2.webp"
               alt="theme_V_vii-p2"
               className="object-cover w-full h-full group-hover:scale-110 transition duration-1000"
             />
           </div>
-          <div className="overflow-hidden w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
+          <div className="overflow-hidden xl:w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
             <img
               src="/project-photography/theme_V_vii-p3.webp"
               alt="theme_V_vii-p3"
               className="object-cover w-full h-full group-hover:scale-110 transition duration-1000"
             />
           </div>
-          <div className="overflow-hidden w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
+          <div className="overflow-hidden xl:w-50 h-80 border-2 border-white/50 rounded-bl-4xl rounded-tr-4xl group mx-auto">
             <img
               src="/project-photography/theme_V_vii-p4.webp"
               alt="theme_V_vii-p4"

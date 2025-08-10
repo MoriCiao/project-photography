@@ -2,7 +2,7 @@ import React from "react";
 import ContainerBg from "../../components/containerBg";
 
 const Theme_V_vi = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
-  const animate = openAnimation("theme_V_vi", "h-50");
+  const animate = openAnimation("theme_V_vi", "md:h-50 h-auto");
 
   return (
     <section

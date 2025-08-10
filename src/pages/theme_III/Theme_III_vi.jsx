@@ -20,7 +20,7 @@ const Theme_III_vi = ({ items_style }) => {
       ></span>
 
       <div className="theme_III_text theme_context">
-        <h3>
+        <h3 className="flex md:flex-row flex-col md:items-end">
           Face / Eye Detection AF
           <span className="h3-span">（臉部 / 眼控對焦）</span>
         </h3>
