@@ -21,7 +21,7 @@ const Theme_III_iii = ({ items_style }) => {
       ></span>
 
       <div className="theme_III_text theme_context">
-        <h3 className="lg:!text-[1.5rem] flex md:flex-row flex-col md:items-end">
+        <h3 className="lg:!text-[1.5rem] flex 2xl:flex-row flex-col 2xl:items-end">
           Continuous AF / AI-Servo / AF-C
           <span className="h3-span">（連續自動對焦）</span>
         </h3>

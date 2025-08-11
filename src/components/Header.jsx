@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./Hero";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen((prev) => !prev);
+    console.log("123");
+  };
   return (
     <section className="header text-white relative h-screen overflow-hidden ">
       <h3
         id="header-top"
-        className="text-center text-xl py-4 bg-black/50 sm:font-thin font-[800]"
+        className="text-center text-xl py-4 bg-black/50 sm:font-thin font-[800] relative"
       >
         攝影基礎入門
+        <button
+          className="sm:hidden absolute top-1/2 -translate-y-1/2 left-0  w-15 h-full border flex flex-col gap-2 items-center justify-center "
+          onClick={handleOpen}
+        >
+          <hr className="h-[2px] w-[60%]" />
+          <hr className="h-[2px] w-[60%]" />
+          <hr className="h-[2px] w-[60%]" />
+        </button>
       </h3>
-      <nav className="nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50">
+
+      <div>
+        <nav className="sm:hidden w-full "></nav>
+      </div>
+      <nav
+        className={`nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50 sm:opacity-100 transition duration-500  ${
+          isOpen ? "opacity-0 -translate-x-100" : "opacity-100  translate-x-0"
+        }`}
+      >
         <ul className="flex sm:flex-row flex-col sm:w-auto w-full gap-8 text-lg ">
           <li className="sm:text-start flex justify-center ">
             <a href="#theme_I">曝光三元素</a>
@@ -34,10 +55,10 @@ const Header = () => {
         <blockquote className="m-auto sm:w-auto w-full  flex flex-col  justify-center text-center xl:text-[2.5rem]  md:text-[1.5rem] text-[1rem] font-thin absolute z-1 sm:top-1/2 bottom-50 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           <p className=""> “A picture is worth a thousand words.” </p>
           <div></div>
-          <p className=" text-lg text-end sm:pr-0 pr-10">
+          <p className=" text-lg sm:text-end text-center sm:pr-0 pr-10">
             一張照片勝過千言萬語。
           </p>
-          <footer className="text-lg  text-end sm:pr-0 pr-10">
+          <footer className="text-lg  sm:text-end text-center sm:pr-0 pr-10">
             —<cite>Fred R. Barnard</cite>{" "}
           </footer>
         </blockquote>

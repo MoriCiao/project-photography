@@ -15,7 +15,7 @@ const Theme_III_vii = ({ items_style }) => {
   };
 
   const card =
-    "flex flex-col gap-1 border border-white/20 p-4 bg-gradient-to-br from-white/10 via-black/20 to-black/50 rounded-md transition duration-1000 max-h-100 min-h-20";
+    "flex flex-col gap-1 border border-white/20 p-4 bg-gradient-to-br from-white/10 via-black/20 to-black/50 rounded-md transition duration-1000 max-h-150 min-h-20";
 
   return (
     <section
@@ -31,14 +31,14 @@ const Theme_III_vii = ({ items_style }) => {
         alt={"theme_III背景"}
         className={items_style.s2}
       />
-      <div className="theme_III_text flex flex-col gap-4 theme_context">
+      <div className="theme_III_text flex flex-col gap-4 ">
         <div className={card} onClick={() => handleToggle("result")}>
-          <h3>總結</h3>
+          <h3 className="!text-[1.5rem]">總結</h3>
 
           <ul
-            className={`flex flex-col justify-center sm:gap-2  transition-all duration-500 ${
+            className={`flex flex-col sm:gap-2  transition-all duration-500 ${
               isToggle.result
-                ? "opacity-100 sm:w-150 w-auto h-50 "
+                ? "opacity-100 sm:w-150 w-auto h-auto "
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >
@@ -82,11 +82,11 @@ const Theme_III_vii = ({ items_style }) => {
         </div>
         <div className={card} onClick={() => handleToggle("tips")}>
           {/* （適合做成 Tips 小提示框） */}
-          <h3>💡小技巧：</h3>
+          <h3 className="!text-[1.5rem]">💡小技巧：</h3>
           <ul
             className={`flex flex-col justify-center sm:gap-2 transition  duration-500 ${
               isToggle.tips
-                ? "opacity-100 sm:w-150 w-auto sm:h-50 "
+                ? "opacity-100 sm:w-150 w-auto h-auto "
                 : "opacity-0 -translate-y-10 h-0"
             }`}
           >

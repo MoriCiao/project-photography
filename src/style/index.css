@@ -307,6 +307,10 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   height: 100%;
 }
 
+.theme_context {
+  padding: 1.5rem;
+}
+
 .theme_III_i li, .theme_III_text li {
   transition: all 0.6s;
 }
@@ -320,6 +324,11 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .theme_context {
+    padding: 1rem;
+  }
+}
 @media (max-width: 768px) {
   .theme_III_item h1 {
     font-size: 2rem !important;

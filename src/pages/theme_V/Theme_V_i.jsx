@@ -9,12 +9,15 @@ const Theme_V_i = () => {
         src={"/project-photography/theme_V_i.webp"}
         alt={"theme_V背景"}
         className={
-          "theme-bg absolute -z-0 top-0 sm:right-0 left-0 sm:w-300 w-full h-full object-cover object-right sm:brightness-60 brightness-30 blur-[0px] "
+          "theme-bg absolute -z-0 top-0 sm:right-0 left-0 sm:w-300 sm:w-full w-full h-full object-cover object-right sm:brightness-60 brightness-30 blur-[0px] "
         }
       />
 
       <blockquote className="absolute z-1 xl:right-150 lg:right-80 right-0 lg:bottom-40 lg:scale-110  bottom-20  lg:-translate-x-0  lg:w-auto w-full xl:text-end  text-center">
-        <p>“Seeing is not enough; you have to feel what you photograph.”</p>
+        <p>
+          “Seeing is not enough; <br className="sm:hidden" /> you have to feel
+          what you photograph.”
+        </p>
         <p className="lg:text-end text-center">
           光看到還不夠，你必須感受到你所拍攝的東西。
         </p>

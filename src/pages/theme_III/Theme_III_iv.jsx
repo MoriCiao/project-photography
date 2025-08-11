@@ -20,7 +20,7 @@ const Theme_III_iv = ({ items_style }) => {
       ></span>
 
       <div className="theme_III_text theme_context">
-        <h3 className="flex md:flex-row flex-col md:items-end">
+        <h3 className="flex 2xl:flex-row flex-col 2xl:items-end">
           AF-A / AI Focus
           <span className="h3-span">（自動切換對焦）</span>
         </h3>

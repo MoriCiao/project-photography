@@ -30,7 +30,7 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
       />
 
       <div
-        className={`grid ${
+        className={`grid h-full ${
           isToggle.aperture
             ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
             : "grid-cols-1"

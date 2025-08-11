@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import hero from "/project-photography/hero-1280.webp";
 
 const Hero = () => {
   return (
     <img
-      src={hero}
+      src="/project-photography/hero-1280.webp"
       srcSet="/project-photography/hero-640.webp 640w, /project-photography/hero-1280.webp 1280w ,/project-photography/hero-1920.webp 1920w"
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1200px"
       alt="hero.webp"
