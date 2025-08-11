@@ -25,7 +25,7 @@ const Header = () => {
       </h3>
 
       <nav
-        className={`nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50 sm:opacity-100 transition duration-500  ${
+        className={`nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50 sm:opacity-100 sm:translate-x-0 transition duration-500  ${
           isOpen ? "opacity-100  translate-x-0" : "opacity-0 -translate-x-100"
         }`}
       >
