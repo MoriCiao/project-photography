@@ -15,21 +15,18 @@ const Header = () => {
       >
         攝影基礎入門
         <button
-          className="sm:hidden absolute top-1/2 -translate-y-1/2 left-0  w-15 h-full border flex flex-col gap-2 items-center justify-center "
+          className="sm:hidden absolute top-1/2 -translate-y-1/2 left-0  w-15 h-full flex flex-col gap-2 items-center justify-center cursor-pointer"
           onClick={handleOpen}
         >
-          <hr className="h-[2px] w-[60%]" />
-          <hr className="h-[2px] w-[60%]" />
-          <hr className="h-[2px] w-[60%]" />
+          <hr className="h-[4px] w-[60%] border border-white/50 bg-white/50" />
+          <hr className="h-[4px] w-[60%] border border-white/50 bg-white/50" />
+          <hr className="h-[4px] w-[60%] border border-white/50 bg-white/50" />
         </button>
       </h3>
 
-      <div>
-        <nav className="sm:hidden w-full "></nav>
-      </div>
       <nav
         className={`nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50 sm:opacity-100 transition duration-500  ${
-          isOpen ? "opacity-0 -translate-x-100" : "opacity-100  translate-x-0"
+          isOpen ? "opacity-100  translate-x-0" : "opacity-0 -translate-x-100"
         }`}
       >
         <ul className="flex sm:flex-row flex-col sm:w-auto w-full gap-8 text-lg ">
