@@ -1,5 +1,3 @@
-import React from "react";
-
 const Container_II = ({ children, flex, w, h1, h2 }) => {
   return (
     <div className={`container_II ${flex} ${w} ${h1}`}>

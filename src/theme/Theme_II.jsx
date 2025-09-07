@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Container_I from "../components/Container_I";
-import Container_II from "../components/Container_II";
-import Container_III from "../components/Container_III";
+import Container_IV from "../components/Container_IV";
 import Theme_II_i from "../pages/theme_II/Theme_II_i";
 import Theme_II_ii from "../pages/theme_II/Theme_II_ii";
 import Theme_II_iii from "../pages/theme_II/Theme_II_iii";
@@ -9,7 +8,6 @@ import Theme_II_iv from "../pages/theme_II/Theme_II_iv";
 import Theme_II_v from "../pages/theme_II/Theme_II_v";
 import Theme_II_vi from "../pages/theme_II/Theme_II_vi";
 import Theme_II_vii from "../pages/theme_II/Theme_II_vii";
-import Container_IV from "../components/Container_IV";
 
 const Theme_II = () => {
   const [isToggle, setIsToggle] = useState({

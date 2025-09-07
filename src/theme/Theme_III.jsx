@@ -1,4 +1,3 @@
-import React from "react";
 import Container_I from "../components/Container_I";
 import Theme_III_i from "../pages/theme_III/Theme_III_i";
 import Theme_III_ii from "../pages/theme_III/Theme_III_ii";

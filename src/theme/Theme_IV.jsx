@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import Container_I from "../components/Container_I";
 import Container_II from "../components/Container_II";
 import Theme_IV_i from "../pages/theme_IV/Theme_IV_i";
-
 import Theme_IV_iii from "../pages/theme_IV/Theme_IV_iii";
 import Theme_IV_iv from "../pages/theme_IV/Theme_IV_iv";
 import Theme_IV_v from "../pages/theme_IV/Theme_IV_v";
