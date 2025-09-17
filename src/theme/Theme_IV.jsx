@@ -16,11 +16,11 @@ const Theme_IV = () => {
   };
 
   return (
-    <article id="theme_IV" className="theme themeIV bg-black text-white pb-12">
+    <article id="theme_IV" className="theme themeIV bg-black pb-12 text-white">
       <Container_I w="w-[100%]" h="xl:h-screen">
         <Theme_IV_i />
       </Container_I>
-      <div className="flex flex-col gap-8 items-center">
+      <div className="flex flex-col items-center gap-8">
         <Container_II
           flex="flex lg:flex-row flex-col gap-8 "
           w="w-[90%]"

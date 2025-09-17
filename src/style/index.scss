@@ -1,65 +1,57 @@
-
-@import '_header.scss';
-@import '_theme_I.scss';
-@import '_theme_ii.scss';
-@import '_theme_III.scss';
-@import '_theme_iv.scss';
+@import "_header.scss";
+@import "_theme_I.scss";
+@import "_theme_ii.scss";
+@import "_theme_III.scss";
+@import "_theme_iv.scss";
 @import "_theme_v.scss";
 
-html{
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
-html,body{
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    .theme_I_i,
-    .theme_II_i,
-    .theme_III_i,
-    .theme_IV_i,
-    .theme_V_i {
-        padding: 4rem ;
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  .theme_I_i,
+  .theme_II_i,
+  .theme_III_i,
+  .theme_IV_i,
+  .theme_V_i {
+    padding: 4rem;
+  }
+  .theme {
+    h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      font-weight: 900;
     }
-    .theme{
-        
-        h1{
-            position: relative;
-            z-index: 1;
-            font-size: 2.5rem;
-            font-weight: 900;
-        }
- 
-        h3{
-            font-size: 2rem;
-        }
-        li{
-            &::before{
-                content: '🔸';
-            }
-            
-        }
-        section{
-            height: 100%;
-        }
-        
+
+    h3 {
+      font-size: 2rem;
     }
-    
-    
-    
+    li {
+      &::before {
+        content: "🔸";
+      }
+    }
+    section {
+      height: 100%;
+    }
+  }
 }
 
 .h3-span {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }
 
-.theme_context{
-
-    width: 100%;
-    height: 100%;
-
+.theme_context {
+  width: 100%;
+  height: 100%;
 }

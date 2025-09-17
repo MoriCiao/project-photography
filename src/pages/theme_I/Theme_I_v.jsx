@@ -3,12 +3,12 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_I_v = () => {
   return (
-    <section className="result w-full h-full p-8 text-start flex flex-col gap-2 items-start justify-start">
+    <section className="result flex h-full w-full flex-col items-start justify-start gap-2 p-8 text-start">
       <ContainerBg
         src={"/project-photography/theme_I_v.webp"}
         alt={"theme_I背景"}
         className={
-          "theme_I-bg transition duration-500 brightness-60 opacity-100 hover:opacity-10"
+          "theme_I-bg opacity-100 brightness-60 transition duration-500 hover:opacity-10"
         }
       />
       <h3>總結</h3>

@@ -1,78 +1,70 @@
-.theme_III_item{
-    transition:all  0.6s ease;
-    height: 100%;
+.theme_III_item {
+  transition: all 0.6s ease;
+  height: 100%;
 }
-.theme_context{
-    padding: 1.5rem;
+.theme_context {
+  padding: 1.5rem;
 }
 
-.theme_III_i,.theme_III_text{
-    li{
-        transition: all 0.6s;
-        &:hover{
-            color: orangered;
-        }
+.theme_III_i,
+.theme_III_text {
+  li {
+    transition: all 0.6s;
+    &:hover {
+      color: orangered;
     }
-
-    
+  }
 }
-.theme_III_text{
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    
+.theme_III_text {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
+  .theme_context {
+    padding: 1rem;
+  }
+}
+
+.theme_III_item {
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem !important;
+    }
+    h3 {
+      font-size: 1.5rem !important;
+      font-weight: 900;
+    }
+    h4,
+    p,
+    li {
+      font-size: 1rem;
+    }
     .theme_context {
-            padding: 1rem;
+      padding: 1rem;
     }
-    
+  }
 }
-
-
-.theme_III_item{
-    @media (max-width:768px) {
-
-        h1{
-            font-size: 2rem !important;
-        }
-        h3 {
-            font-size: 1.5rem !important;
-            font-weight: 900;
-        }
-        h4,p,li{
-            font-size: 1rem;
-        }
-        .theme_context{
-            padding: 1rem;
-        }
-    }   
-}
-.theme_III_item{
-
-    @media (max-width:480px) {
-        h1 {
-            font-size: 2rem !important;
-        }
-    
-        h3 {
-            font-size: 1.25rem !important;
-            font-weight: 900;
-        }
-    
-        h4,
-        p,
-        li {
-            font-size: 0.8rem;
-        }
-    
-        .theme_context {
-            padding: 1rem;
-        }
-        
-    
+.theme_III_item {
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem !important;
     }
+
+    h3 {
+      font-size: 1.25rem !important;
+      font-weight: 900;
+    }
+
+    h4,
+    p,
+    li {
+      font-size: 0.8rem;
+    }
+
+    .theme_context {
+      padding: 1rem;
+    }
+  }
 }
-
-

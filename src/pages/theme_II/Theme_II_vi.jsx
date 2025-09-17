@@ -5,23 +5,23 @@ const Theme_II_vi = ({ isToggle, setIsToggle, handleToggle }) => {
   return (
     <section
       id="Theme_II_vi"
-      className={`theme_II_vi theme_II_item `}
+      className={`theme_II_vi theme_II_item`}
       onClick={() => handleToggle("theme_II_vi")}
     >
       <ContainerBg
         src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
-        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
-          isToggle.theme_II_vi ? "brightness-30 " : "brightness-60 "
-        } opacity-100 `}
+        className={`absolute top-0 left-0 h-full w-full -translate-y-0 object-cover transition-all duration-1000 ${
+          isToggle.theme_II_vi ? "brightness-30" : "brightness-60"
+        } opacity-100`}
       />
       <div className="theme_context flex flex-col sm:gap-4">
         <h3>總結</h3>
         <div
           className={` ${
             isToggle.theme_II_vi
-              ? "opacity-100 w-full text-[1rem] md:p-0 pt-0 pb-4"
-              : "opacity-0 h-30 w-full "
+              ? "w-full pt-0 pb-4 text-[1rem] opacity-100 md:p-0"
+              : "h-30 w-full opacity-0"
           } transition-all duration-500`}
         >
           <ul>

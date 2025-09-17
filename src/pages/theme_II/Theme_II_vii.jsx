@@ -5,15 +5,15 @@ const Theme_II_vii = ({ isToggle, setIsToggle, handleToggle }) => {
   return (
     <section
       id="Theme_II_vii"
-      className={`theme_II_vii theme_II_item `}
+      className={`theme_II_vii theme_II_item`}
       onClick={() => handleToggle("theme_II_vii")}
     >
       <ContainerBg
         src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
-        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
-          isToggle.theme_II_vii ? "brightness-30 " : "brightness-60 "
-        } opacity-100 `}
+        className={`absolute top-0 left-0 h-full w-full -translate-y-0 object-cover transition-all duration-1000 ${
+          isToggle.theme_II_vii ? "brightness-30" : "brightness-60"
+        } opacity-100`}
       />
       <div className="theme_context flex flex-col sm:gap-4">
         {/* （適合做成 Tips 小提示框） */}
@@ -21,11 +21,11 @@ const Theme_II_vii = ({ isToggle, setIsToggle, handleToggle }) => {
         <div
           className={` ${
             isToggle.theme_II_vii
-              ? "opacity-100 w-full text-[1rem] sm:h-auto h-50 md:p-0"
-              : "opacity-0 h-30 w-full "
-          } transition-all duration-500 `}
+              ? "h-50 w-full text-[1rem] opacity-100 sm:h-auto md:p-0"
+              : "h-30 w-full opacity-0"
+          } transition-all duration-500`}
         >
-          <ul className="flex flex-col !gap-2 h-auto">
+          <ul className="flex h-auto flex-col !gap-2">
             <li>室內拍攝容易偏黃，建議調整為「白熾燈」或「手動設定」白平衡</li>
             <li>想要溫暖氛圍可故意用「陰天」或「Cloudy」模式</li>
             <li>

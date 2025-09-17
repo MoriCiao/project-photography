@@ -36,7 +36,7 @@ const Theme_II = () => {
   return (
     <article
       id="theme_II"
-      className="theme themeII w-full !pb-8 max-w-screen relative h-auto bg-black flex flex-wrap"
+      className="theme themeII relative flex h-auto w-full max-w-screen flex-wrap bg-black !pb-8"
     >
       <Container_I w="w-full" h="h-[100vh]">
         <Theme_II_i />

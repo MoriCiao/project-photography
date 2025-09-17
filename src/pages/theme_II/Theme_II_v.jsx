@@ -11,9 +11,9 @@ const Theme_II_v = ({ isToggle, setIsToggle, handleToggle }) => {
       <ContainerBg
         src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
-        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
-          isToggle.theme_II_v ? "brightness-30 " : "brightness-60 "
-        } opacity-100 `}
+        className={`absolute top-0 left-0 h-full w-full -translate-y-0 object-cover transition-all duration-1000 ${
+          isToggle.theme_II_v ? "brightness-30" : "brightness-60"
+        } opacity-100`}
       />
       {/* RAW 拍攝與後製白平衡 */}
       <div className="theme_context flex flex-col sm:gap-4">
@@ -21,8 +21,8 @@ const Theme_II_v = ({ isToggle, setIsToggle, handleToggle }) => {
         <div
           className={` ${
             isToggle.theme_II_v
-              ? "opacity-100 w-full h-auto text-[1rem] md:p-0 p-4"
-              : "opacity-0 h-30 w-full"
+              ? "h-auto w-full p-4 text-[1rem] opacity-100 md:p-0"
+              : "h-30 w-full opacity-0"
           } transition-all duration-500`}
         >
           <ul>

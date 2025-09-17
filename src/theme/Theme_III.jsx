@@ -18,7 +18,7 @@ const Theme_III = () => {
   return (
     <article
       id="theme_III"
-      className="theme themeIII relative !pb-8 h-full flex flex-wrap gap-8 items-center justify-center bg-black text-white"
+      className="theme themeIII relative flex h-full flex-wrap items-center justify-center gap-8 bg-black !pb-8 text-white"
     >
       <Container_I w="w-[100%]" h="h-screen">
         <Theme_III_i />

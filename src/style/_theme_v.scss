@@ -1,83 +1,75 @@
-.theme_V_item{
-    border: 2px white solid;
-    overflow: hidden;
+.theme_V_item {
+  border: 2px white solid;
+  overflow: hidden;
 
+  table {
+    border: white 1px solid;
+    text-align: center;
 
+    td,
+    th {
+      border: white 1px solid;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+
+  .theme_V-text {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.themeV {
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem !important;
+    }
+    h3 {
+      font-size: 1.5rem !important;
+      font-weight: 900;
+    }
+
+    h4,
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    .theme_context {
+      padding: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+  }
+}
+.theme_V_item {
+  padding: 2rem;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
+}
+.theme_V_item {
+  @media (max-width: 1024px) {
     table {
-            border: white 1px solid;
-            text-align: center;
-    
-            td,
-            th {
-                border: white 1px solid;
-                padding: 0.5rem 1.5rem;
-            }
-        }
-
-    .theme_V-text{
-        position: relative;
-        z-index: 2;
-        
+      font-size: 1rem !important;
+      margin: auto;
+      td,
+      th {
+        padding: 0.5rem !important;
+      }
     }
-        
-}
+  }
 
-
-.themeV{
-    @media (max-width:768px) {
-        h1{
-            font-size: 2rem !important;
-        }
-        h3 {
-            font-size: 1.5rem !important;
-            font-weight: 900;
-        }
-
-        h4,
-        p,
-        li {
-            font-size: 1rem;
-        }
-
-        .theme_context {
-            padding: 1rem;
-        }
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.8rem !important;
+      td,
+      th {
+        padding: 0.5rem !important;
+      }
     }
-    @media (max-width:480px) {}
-}
-.theme_V_item{
-    padding: 2rem;
-    @media (max-width:768px) {
-        padding: 1rem;
-       
-    }
-    @media (max-width:480px) {
-        padding: 0.5rem;
-    }
-}
-.theme_V_item{
-    @media (max-width:1024px) {
-        table {
-            font-size: 1rem !important;
-            margin: auto;
-            td,
-            th {
-                padding: 0.5rem !important;
-    
-            }
-        }
-    }
-
-    @media (max-width:768px) {
-        
-        table{
-            font-size: 0.8rem !important;
-            td,th{
-                padding: 0.5rem !important;
-                
-            }
-        }
-    }
-
-    
+  }
 }

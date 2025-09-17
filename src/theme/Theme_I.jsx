@@ -17,7 +17,7 @@ const Theme_I = () => {
   return (
     <article
       id="theme_I"
-      className="theme themeI w-full max-w-screen relative h-auto bg-black flex flex-wrap"
+      className="theme themeI relative flex h-auto w-full max-w-screen flex-wrap bg-black"
     >
       <Container_I w="w-full" h="h-screen">
         <Theme_I_i isToggle={isToggle} setIsToggle={setIsToggle} />
@@ -27,7 +27,7 @@ const Theme_I = () => {
         w="w-full "
         h="lg:h-screen h-150 "
         h2="h-screen "
-        className="lg:flex-row flex-col"
+        className="flex-col lg:flex-row"
       >
         <Theme_I_ii isToggle={isToggle} setIsToggle={setIsToggle} />
         <Theme_I_iii isToggle={isToggle} setIsToggle={setIsToggle} />

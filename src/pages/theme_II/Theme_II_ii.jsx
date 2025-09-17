@@ -16,25 +16,25 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
       <ContainerBg
         src={"/project-photography/items-bg.webp"}
         alt={"theme_II背景"}
-        className={`absolute top-0 left-0  w-full h-full object-cover transition-all duration-1000 -translate-y-0 ${
-          isToggle.theme_II_ii ? "brightness-30" : "brightness-60 "
-        } opacity-100 `}
+        className={`absolute top-0 left-0 h-full w-full -translate-y-0 object-cover transition-all duration-1000 ${
+          isToggle.theme_II_ii ? "brightness-30" : "brightness-60"
+        } opacity-100`}
       />
       <ContainerBg
         src={"/project-photography/theme_II_ii.webp"}
         alt={"theme_II背景"}
         className={`${
           isToggle.theme_II_ii
-            ? "block p-4 xl:max-w-150 lg:max-w-120 sm:max-w-80 md:block hidden  "
-            : "hidden p-0 w-[100%]"
-        }   absolute lg:top-1/2 lg:right-0 md:bottom-0 md:right-1/2 md:translate-x-1/2 lg:translate-x-0 border border-black  transition-all duration-1000 lg:-translate-y-1/2`}
+            ? "block hidden p-4 sm:max-w-80 md:block lg:max-w-120 xl:max-w-150"
+            : "hidden w-[100%] p-0"
+        } absolute border border-black transition-all duration-1000 md:right-1/2 md:bottom-0 md:translate-x-1/2 lg:top-1/2 lg:right-0 lg:translate-x-0 lg:-translate-y-1/2`}
       />
       <div
         className={`${
           isToggle.theme_II_ii
             ? "bg-gradient-to-r from-black/20 via-black/50 to-black/0"
             : ""
-        } absolute  top-0 right-0  w-[100%] h-[100%] transition duration-1500`}
+        } absolute top-0 right-0 h-[100%] w-[100%] transition duration-1500`}
       ></div>
 
       <div className="theme_context flex flex-col gap-4">
@@ -43,8 +43,8 @@ const Theme_II_ii = ({ isToggle, setIsToggle, handleToggle }) => {
         <ul
           className={`${
             isToggle.theme_II_ii
-              ? "opacity-100 h-auto text-[1rem]"
-              : "opacity-0 h-30"
+              ? "h-auto text-[1rem] opacity-100"
+              : "h-30 opacity-0"
           } flex flex-col gap-4 transition-all duration-500`}
         >
           <li>所有光源都有「色溫」，單位為 K（Kelvin）</li>

@@ -5,7 +5,7 @@ const GoTop = () => {
     <>
       <a
         href="#header-top"
-        className="fixed sm:bottom-8 bottom-4 sm:right-12 right-4 z-1000 border-2 sm:text-[1.25rem] text-small text-white block sm:w-15 w-10 sm:h-15 h-10 flex items-center justify-center rounded-full hover:bg-red-500  hover:text-white transition duration-500"
+        className="text-small fixed right-4 bottom-4 z-1000 block flex h-10 w-10 items-center justify-center rounded-full border-2 text-white transition duration-500 hover:bg-red-500 hover:text-white sm:right-12 sm:bottom-8 sm:h-15 sm:w-15 sm:text-[1.25rem]"
       >
         Top
       </a>

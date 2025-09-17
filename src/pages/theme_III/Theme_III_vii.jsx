@@ -31,22 +31,22 @@ const Theme_III_vii = ({ items_style }) => {
         alt={"theme_III背景"}
         className={items_style.s2}
       />
-      <div className="theme_III_text flex flex-col gap-4 ">
+      <div className="theme_III_text flex flex-col gap-4">
         <div className={card} onClick={() => handleToggle("result")}>
           <h3 className="!text-[1.5rem]">總結</h3>
 
           <ul
-            className={`flex flex-col sm:gap-2  transition-all duration-500 ${
+            className={`flex flex-col transition-all duration-500 sm:gap-2 ${
               isToggle.result
-                ? "opacity-100 sm:w-150 w-auto h-auto "
-                : "opacity-0 -translate-y-10 h-0"
+                ? "h-auto w-auto opacity-100 sm:w-150"
+                : "h-0 -translate-y-10 opacity-0"
             }`}
           >
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               選對對焦模式，能讓你準確捕捉畫面的重點與情感
@@ -54,8 +54,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               靜態主體適合單次對焦，動態主體則需連續追焦
@@ -63,8 +63,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               透過手動對焦或眼控對焦，達成更高的精準度
@@ -72,8 +72,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.result
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               熟悉各種對焦模式，讓每一次按下快門都更有信心
@@ -84,17 +84,17 @@ const Theme_III_vii = ({ items_style }) => {
           {/* （適合做成 Tips 小提示框） */}
           <h3 className="!text-[1.5rem]">💡小技巧：</h3>
           <ul
-            className={`flex flex-col justify-center sm:gap-2 transition  duration-500 ${
+            className={`flex flex-col justify-center transition duration-500 sm:gap-2 ${
               isToggle.tips
-                ? "opacity-100 sm:w-150 w-auto h-auto "
-                : "opacity-0 -translate-y-10 h-0"
+                ? "h-auto w-auto opacity-100 sm:w-150"
+                : "h-0 -translate-y-10 opacity-0"
             }`}
           >
             <li
               className={`transition duration-500 ${
                 isToggle.tips
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               「靜的用單次，動的用連續，特寫靠手動，人物選眼控。」
@@ -102,8 +102,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.tips
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               拍風景、商品 ➜ 用 單次對焦（AF-S）
@@ -111,8 +111,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.tips
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               拍小孩、動物、街頭動態 ➜ 用 連續對焦（AF-C）
@@ -120,8 +120,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.tips
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               拍微距細節 ➜ 用 手動對焦（MF） 更精準
@@ -129,8 +129,8 @@ const Theme_III_vii = ({ items_style }) => {
             <li
               className={`transition duration-500 ${
                 isToggle.tips
-                  ? "opacity-100 sm:w-150 w-auto max-h-50 "
-                  : "opacity-0  h-0"
+                  ? "max-h-50 w-auto opacity-100 sm:w-150"
+                  : "h-0 opacity-0"
               }`}
             >
               拍人像 ➜ 開啟 眼控對焦（Eye AF），對焦更聰明！

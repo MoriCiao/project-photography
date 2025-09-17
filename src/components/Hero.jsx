@@ -10,7 +10,7 @@ const Hero = () => {
       loading="eager"
       decoding="async"
       fetchPriority="high"
-      className="hero object-cover w-full h-full transition duration-600 "
+      className="hero h-full w-full object-cover transition duration-600"
     />
   );
 };

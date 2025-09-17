@@ -10,13 +10,13 @@ const Header = () => {
   return (
     <section
       id="header-top"
-      className="header text-white relative h-screen overflow-hidden "
+      className="header relative h-screen overflow-hidden text-white"
     >
       <Headroom>
-        <h3 className="text-center text-xl py-4 bg-black/50 sm:font-thin font-[800] relative">
+        <h3 className="relative bg-black/50 py-4 text-center text-xl font-[800] sm:font-thin">
           攝影基礎入門
           <button
-            className="sm:hidden absolute top-1/2 -translate-y-1/2 left-0  w-15 h-full flex flex-col gap-2 items-center justify-center cursor-pointer"
+            className="absolute top-1/2 left-0 flex h-full w-15 -translate-y-1/2 cursor-pointer flex-col items-center justify-center gap-2 sm:hidden"
             onClick={handleOpen}
           >
             <hr className="h-[4px] w-[60%] border border-white/50 bg-white/50" />
@@ -27,38 +27,38 @@ const Header = () => {
       </Headroom>
       <Slide>
         <nav
-          className={`nav sm:px-24 py-8 flex items-center xl:justify-start md:justify-center sm:bg-transparent bg-black/50 sm:opacity-100 sm:translate-x-0 transition duration-500  ${
-            isOpen ? "opacity-100  translate-x-0" : "opacity-0 -translate-x-100"
+          className={`nav flex items-center bg-black/50 py-8 transition duration-500 sm:translate-x-0 sm:bg-transparent sm:px-24 sm:opacity-100 md:justify-center xl:justify-start ${
+            isOpen ? "translate-x-0 opacity-100" : "-translate-x-100 opacity-0"
           }`}
         >
-          <ul className="flex sm:flex-row flex-col sm:w-auto w-full gap-8 text-lg ">
-            <li className="sm:text-start flex justify-center ">
+          <ul className="flex w-full flex-col gap-8 text-lg sm:w-auto sm:flex-row">
+            <li className="flex justify-center sm:text-start">
               <a href="#theme_I">曝光三元素</a>
             </li>
-            <li className="sm:text-start flex justify-center ">
+            <li className="flex justify-center sm:text-start">
               <a href="#theme_II">白平衡</a>
             </li>
-            <li className="sm:text-start flex justify-center ">
+            <li className="flex justify-center sm:text-start">
               <a href="#theme_III">對焦模式</a>
             </li>
-            <li className="sm:text-start flex justify-center ">
+            <li className="flex justify-center sm:text-start">
               <a href="#theme_IV">拍攝模式</a>
             </li>
-            <li className="sm:text-start flex justify-center ">
+            <li className="flex justify-center sm:text-start">
               <a href="#theme_V">焦段與鏡頭視角</a>
             </li>
           </ul>
         </nav>
       </Slide>
-      <div className="absolute top-0 left-0  -z-1 w-full h-full">
+      <div className="absolute top-0 left-0 -z-1 h-full w-full">
         <Hero />
-        <blockquote className="m-auto sm:w-auto w-full  flex flex-col  justify-center text-center xl:text-[2.5rem]  md:text-[1.5rem] text-[1rem] font-thin absolute z-1 sm:top-1/2 bottom-50 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+        <blockquote className="absolute bottom-50 left-1/2 z-1 m-auto flex w-full -translate-x-1/2 -translate-y-1/2 flex-col justify-center text-center text-[1rem] font-thin sm:top-1/2 sm:w-auto md:text-[1.5rem] xl:text-[2.5rem]">
           <p className=""> “A picture is worth a thousand words.” </p>
           <div></div>
-          <p className=" text-lg sm:text-end text-center sm:pr-0 pr-10">
+          <p className="pr-10 text-center text-lg sm:pr-0 sm:text-end">
             一張照片勝過千言萬語。
           </p>
-          <footer className="text-lg  sm:text-end text-center sm:pr-0 pr-10">
+          <footer className="pr-10 text-center text-lg sm:pr-0 sm:text-end">
             —<cite>Fred R. Barnard</cite>{" "}
           </footer>
         </blockquote>

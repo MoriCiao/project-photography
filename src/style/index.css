@@ -16,7 +16,9 @@ section.header img.hero {
   transition: 0.6s;
 }
 
-.theme_I_i h1, .theme_I_i span, .theme_I_i nav {
+.theme_I_i h1,
+.theme_I_i span,
+.theme_I_i nav {
   position: relative;
   z-index: 2;
 }
@@ -54,7 +56,9 @@ section.header img.hero {
   text-align: start;
 }
 
-.shutter, .aperture, .iso {
+.shutter,
+.aperture,
+.iso {
   transition: 1s;
   max-width: 90vw;
 }
@@ -155,7 +159,8 @@ li:hover {
     font-size: 1.25rem !important;
     font-weight: 900;
   }
-  .not-toggle p, .not-toggle li {
+  .not-toggle p,
+  .not-toggle li {
     font-size: 1rem !important;
   }
 }
@@ -182,10 +187,16 @@ section.theme_II_item {
   color: white;
   cursor: pointer;
 }
-section.theme_II_item h1, section.theme_II_item h3 {
+section.theme_II_item h1,
+section.theme_II_item h3 {
   position: relative;
   z-index: 1;
-  text-shadow: 4px 4px 5px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  text-shadow:
+    4px 4px 5px black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 section.theme_II_item ul {
   display: flex;
@@ -201,7 +212,12 @@ section.theme_II_item ul li:hover {
 section.theme_II_item ul li a {
   font-size: 1.25rem;
 }
-section.theme_II_item p, section.theme_II_item nav, section.theme_II_item span, section.theme_II_item ul, section.theme_II_item table, section.theme_II_item .theme_context_item {
+section.theme_II_item p,
+section.theme_II_item nav,
+section.theme_II_item span,
+section.theme_II_item ul,
+section.theme_II_item table,
+section.theme_II_item .theme_context_item {
   position: relative;
   z-index: 1;
 }
@@ -220,7 +236,8 @@ section.theme_II_item table {
   text-align: center;
   border: 1px white solid;
 }
-section.theme_II_item table td, section.theme_II_item table th {
+section.theme_II_item table td,
+section.theme_II_item table th {
   border: 1px white solid;
   padding: 0.75rem 0.5rem;
 }
@@ -268,7 +285,8 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   section.theme_II_item table tr {
     font-size: 1rem;
   }
-  section.theme_II_item table td, section.theme_II_item table th {
+  section.theme_II_item table td,
+  section.theme_II_item table th {
     padding: 0.5rem 0.25rem;
   }
 }
@@ -311,10 +329,12 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   padding: 1.5rem;
 }
 
-.theme_III_i li, .theme_III_text li {
+.theme_III_i li,
+.theme_III_text li {
   transition: all 0.6s;
 }
-.theme_III_i li:hover, .theme_III_text li:hover {
+.theme_III_i li:hover,
+.theme_III_text li:hover {
   color: orangered;
 }
 
@@ -337,7 +357,9 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
     font-size: 1.5rem !important;
     font-weight: 900;
   }
-  .theme_III_item h4, .theme_III_item p, .theme_III_item li {
+  .theme_III_item h4,
+  .theme_III_item p,
+  .theme_III_item li {
     font-size: 1rem;
   }
   .theme_III_item .theme_context {
@@ -373,7 +395,8 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   border: white 1px solid;
   text-align: center;
 }
-.themeIV table td, .themeIV table th {
+.themeIV table td,
+.themeIV table th {
   border: white 1px solid;
   padding: 1rem 0.75rem;
 }
@@ -395,7 +418,12 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 }
 @media (max-width: 768px) {
   .theme_IV_item .theme_iv_text {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.2)
+    );
   }
 }
 @media (max-width: 768px) {
@@ -423,7 +451,12 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   }
 }
 .theme_IV_item:hover .theme_iv_text {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 .theme_IV_item:hover .theme_iv_text h3 {
   font-size: 2rem;
@@ -444,7 +477,7 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   min-width: 25rem;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 1.2s ease;
   filter: brightness(1);
 }
@@ -452,7 +485,12 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 .bg-radial {
   position: absolute;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgb(0, 0, 0));
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.7),
+    rgb(0, 0, 0)
+  );
   top: 0;
   left: 0;
 }
@@ -473,7 +511,8 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   .theme_IV_item table {
     height: auto;
   }
-  .theme_IV_item table th, .theme_IV_item table td {
+  .theme_IV_item table th,
+  .theme_IV_item table td {
     padding: 0.5rem 0.75rem;
   }
 }
@@ -547,7 +586,8 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
   .theme_V_item table {
     font-size: 0.8rem !important;
   }
-  .theme_V_item table td, .theme_V_item table th {
+  .theme_V_item table td,
+  .theme_V_item table th {
     padding: 0.5rem !important;
   }
 }
@@ -555,10 +595,11 @@ section.theme_II_item table tbody td:hover :nth-child(odd) {
 html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
@@ -571,26 +612,31 @@ html .theme_I_i,
 html .theme_II_i,
 html .theme_III_i,
 html .theme_IV_i,
-html .theme_V_i, body .theme_I_i,
+html .theme_V_i,
+body .theme_I_i,
 body .theme_II_i,
 body .theme_III_i,
 body .theme_IV_i,
 body .theme_V_i {
   padding: 4rem;
 }
-html .theme h1, body .theme h1 {
+html .theme h1,
+body .theme h1 {
   position: relative;
   z-index: 1;
   font-size: 2.5rem;
   font-weight: 900;
 }
-html .theme h3, body .theme h3 {
+html .theme h3,
+body .theme h3 {
   font-size: 2rem;
 }
-html .theme li::before, body .theme li::before {
+html .theme li::before,
+body .theme li::before {
   content: "🔸";
 }
-html .theme section, body .theme section {
+html .theme section,
+body .theme section {
   height: 100%;
 }
 
@@ -601,4 +647,4 @@ html .theme section, body .theme section {
 .theme_context {
   width: 100%;
   height: 100%;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

@@ -8,14 +8,14 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
     <section
       className={`${
         isToggle.name === "aperture" && isToggle.aperture === true
-          ? "toggle "
+          ? "toggle"
           : "not-toggle"
-      } aperture lg:h-full p-8 text-start flex flex-col gap-2 overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
+      } aperture flex flex-col gap-2 overflow-hidden rounded-2xl border-4 border-yellow-500/50 bg-gradient-to-br from-[#232526] to-[#414345] p-8 text-start text-white lg:h-full`}
       onClick={() =>
         setIsToggle({ name: "aperture", aperture: !isToggle.aperture })
       }
     >
-      <div className="absolute -top-20 left-0 text-white border w-200">
+      <div className="absolute -top-20 left-0 w-200 border text-white">
         <span id="aperture"></span>
       </div>
       {/* 背景 */}
@@ -24,15 +24,15 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.aperture
-            ? "absolute left-0 top-0 sm:scale-200 sm:-translate-x-100"
-            : "absolute left-0 top-0 "
-        } object-cover w-full h-full opacity-20`}
+            ? "absolute top-0 left-0 sm:-translate-x-100 sm:scale-200"
+            : "absolute top-0 left-0"
+        } h-full w-full object-cover opacity-20`}
       />
 
       <div
         className={`grid h-full ${
           isToggle.aperture
-            ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
+            ? "grid-cols-1 gap-8 overflow-y-auto lg:grid-cols-2 lg:gap-0 xl:overflow-hidden"
             : "grid-cols-1"
         }`}
       >
@@ -51,8 +51,8 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
           <div
             className={`${
               isToggle.aperture
-                ? "sm:opacity-100 opacity-100"
-                : "sm:opacity-100 opacity-0"
+                ? "opacity-100 sm:opacity-100"
+                : "opacity-0 sm:opacity-100"
             } transition duration-800`}
           >
             <p>💡小技巧：</p>
@@ -66,12 +66,12 @@ const Theme_I_iii = ({ isToggle, setIsToggle }) => {
         <span
           className={`${
             isToggle.aperture ? "opacity-100" : "opacity-0"
-          } m-auto lg:max-w-150 flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden`}
+          } m-auto flex overflow-hidden rounded-xl border-4 border-white/50 bg-white transition duration-1000 lg:max-w-150`}
         >
           <img
             src="/project-photography/apertrue-3.webp"
             alt="apertrue-2"
-            className="w-full object-fit"
+            className="object-fit w-full"
           />
         </span>
       </div>

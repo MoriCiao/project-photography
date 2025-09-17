@@ -7,13 +7,13 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
       className={`${
         isToggle.name === "shutter" && isToggle.shutter === true
           ? "toggle xla:translate-x-150 lg:translate-x-90"
-          : "not-toggle "
-      } shutter lg:h-full  p-8 text-start text-black flex flex-col gap-2 items-center justify-center border overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
+          : "not-toggle"
+      } shutter flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-4 border-yellow-500/50 bg-gradient-to-br from-[#232526] to-[#414345] p-8 text-start text-black text-white lg:h-full`}
       onClick={() =>
         setIsToggle({ name: "shutter", shutter: !isToggle.shutter })
       }
     >
-      <div className="absolute -top-20 left-0 text-white border w-200">
+      <div className="absolute -top-20 left-0 w-200 border text-white">
         <span id="shutter"></span>
       </div>
       <ContainerBg
@@ -21,25 +21,25 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.shutter
-            ? "absolute left-0 top-0 sm:scale-200 sm:-translate-x-100"
-            : "absolute left-0 top-0 "
-        } object-cover w-full h-full opacity-20`}
+            ? "absolute top-0 left-0 sm:-translate-x-100 sm:scale-200"
+            : "absolute top-0 left-0"
+        } h-full w-full object-cover opacity-20`}
       />
 
       {/* 快門速度（Shutter Speed） */}
       <div
         className={`grid h-full ${
           isToggle.shutter
-            ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
-            : "grid-cols-1 "
+            ? "grid-cols-1 gap-8 overflow-y-auto lg:grid-cols-2 lg:gap-0 xl:overflow-hidden"
+            : "grid-cols-1"
         }`}
       >
         <div
           className={`${
-            isToggle.shutter ? "lg:theme_I_open " : "lg:theme_I_close"
+            isToggle.shutter ? "lg:theme_I_open" : "lg:theme_I_close"
           } transtion drutiona-1000 flex flex-col gap-4`}
         >
-          <h3 className="lg:text-[4rem] text-[2rem] ">
+          <h3 className="text-[2rem] lg:text-[4rem]">
             快門速度（Shutter Speed）
           </h3>
           <p>控制快門打開的時間長短，影響照片是否清晰或模糊。</p>
@@ -51,8 +51,8 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
           <div
             className={`${
               isToggle.shutter
-                ? "sm:opacity-100 opacity-100"
-                : "sm:opacity-100 opacity-0"
+                ? "opacity-100 sm:opacity-100"
+                : "opacity-0 sm:opacity-100"
             } transition duration-800`}
           >
             <p>💡小技巧：</p>
@@ -66,12 +66,12 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
         <div
           className={`${
             isToggle.shutter ? "opacity-100" : "opacity-0"
-          } m-auto max-w-150  flex transition duration-1000 bg-white border-4 border-white/50 rounded-xl overflow-hidden `}
+          } m-auto flex max-w-150 overflow-hidden rounded-xl border-4 border-white/50 bg-white transition duration-1000`}
         >
           <img
             src="/project-photography/theme_I_ii.webp"
             alt="shutter"
-            className="w-full object-fit"
+            className="object-fit w-full"
           />
         </div>
       </div>

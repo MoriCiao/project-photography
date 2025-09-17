@@ -6,9 +6,9 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
     <section
       className={`${
         isToggle.name === "iso" && isToggle.iso === true
-          ? "toggle xl:-translate-x-150 lg:-translate-x-90"
-          : "not-toggle "
-      } iso h-full p-8 text-start flex flex-col gap-2 items-center justify-center overflow-hidden bg-gradient-to-br  from-[#232526] to-[#414345] border-4 border-yellow-500/50 rounded-2xl text-white`}
+          ? "toggle lg:-translate-x-90 xl:-translate-x-150"
+          : "not-toggle"
+      } iso flex h-full flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border-4 border-yellow-500/50 bg-gradient-to-br from-[#232526] to-[#414345] p-8 text-start text-white`}
       onClick={() =>
         setIsToggle({
           name: "iso",
@@ -17,7 +17,7 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
       }
     >
       {/* # 滑動 spot */}
-      <div className="absolute -top-20 left-0 text-white border w-200">
+      <div className="absolute -top-20 left-0 w-200 border text-white">
         <span id="iso"></span>
       </div>
 
@@ -26,14 +26,14 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         alt={"theme_I背景"}
         className={`theme_I-bg ${
           isToggle.iso
-            ? " left-0 top-0 sm:scale-200 sm:-translate-x-100"
-            : "left-0 top-0 "
-        } absolute object-cover w-full h-full opacity-20`}
+            ? "top-0 left-0 sm:-translate-x-100 sm:scale-200"
+            : "top-0 left-0"
+        } absolute h-full w-full object-cover opacity-20`}
       />
       <div
-        className={`grid  w-full h-full ${
+        className={`grid h-full w-full ${
           isToggle.iso
-            ? "lg:grid-cols-2 grid-cols-1 xl:overflow-hidden overflow-y-auto lg:gap-0 gap-8"
+            ? "grid-cols-1 gap-8 overflow-y-auto lg:grid-cols-2 lg:gap-0 xl:overflow-hidden"
             : "grid-cols-1"
         }`}
       >
@@ -52,8 +52,8 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
           <div
             className={`${
               isToggle.aperture
-                ? "sm:opacity-100 opacity-100"
-                : "sm:opacity-100 opacity-0"
+                ? "opacity-100 sm:opacity-100"
+                : "opacity-0 sm:opacity-100"
             } transition duration-800`}
           >
             <p>💡小技巧：</p>
@@ -68,12 +68,12 @@ const Theme_I_iv = ({ isToggle, setIsToggle }) => {
         <div
           className={`${
             isToggle.iso ? "opacity-100" : "opacity-0"
-          } lg:w-full lg:h-full flex transition duration-1000  rounded-xl lg:overflow-hidden `}
+          } flex rounded-xl transition duration-1000 lg:h-full lg:w-full lg:overflow-hidden`}
         >
           <img
             src="/project-photography/theme_I_iv.webp"
             alt="iso"
-            className="object-fit lg:h-full p-2 rounded-xl m-auto  bg-white/80"
+            className="object-fit m-auto rounded-xl bg-white/80 p-2 lg:h-full"
           />
         </div>
       </div>

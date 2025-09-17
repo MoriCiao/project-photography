@@ -6,14 +6,14 @@ const Theme_V_vi = ({ isToggle, setIsToggle, handleToggle, openAnimation }) => {
 
   return (
     <section
-      className={`theme_V_item flex border items-start justify-start gap-8 `}
+      className={`theme_V_item flex items-start justify-start gap-8 border`}
       onClick={() => handleToggle("theme_V_vi")}
     >
       <ContainerBg
         src={"/project-photography/theme_V-item-bg.webp"}
         alt={"theme_V背景"}
         className={
-          "absolute -z-0 top-0 left-0 w-full h-[100%] object-cover brightness-60 blur-[2px] "
+          "absolute top-0 left-0 -z-0 h-[100%] w-full object-cover blur-[2px] brightness-60"
         }
       />
 

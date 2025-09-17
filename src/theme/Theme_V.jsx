@@ -35,7 +35,7 @@ const Theme_V = () => {
   };
 
   return (
-    <article id="theme_V" className="theme themeV bg-black text-white pb-12">
+    <article id="theme_V" className="theme themeV bg-black pb-12 text-white">
       <Container_I w="w-[100%]" h="h-screen">
         <Theme_V_i
           isToggle={isToggle}
@@ -43,7 +43,7 @@ const Theme_V = () => {
           handleToggle={handleToggle}
         />
       </Container_I>
-      <div className="flex flex-col items-center justify-center gap-8 mt-8">
+      <div className="mt-8 flex flex-col items-center justify-center gap-8">
         <Container_I w="w-[90%]" h="h-atuo">
           <Theme_V_ii
             isToggle={isToggle}
@@ -80,7 +80,7 @@ const Theme_V = () => {
             openAnimation={openAnimation}
           />
         </Container_I>
-        <div className="flex md:flex-row flex-col  gap-8 w-[90%]">
+        <div className="flex w-[90%] flex-col gap-8 md:flex-row">
           <Container_I w="w-[100%]" h="h-atuo">
             <Theme_V_vi
               isToggle={isToggle}

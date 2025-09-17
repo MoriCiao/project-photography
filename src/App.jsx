@@ -23,7 +23,7 @@ const App = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     image.forEach((img) => observer.observe(img));
@@ -44,7 +44,7 @@ const App = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     imgs.forEach((img) => observer.observe(img));
@@ -66,7 +66,7 @@ const App = () => {
           }
         });
       },
-      { threshold: 0.75 }
+      { threshold: 0.75 },
     );
 
     imgs.forEach((img) => observer.observe(img));
@@ -74,9 +74,9 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="App w-full max-w-screen  tracking-widest relative ">
+    <div className="App relative w-full max-w-screen tracking-widest">
       <GoTop />
-      <header className="header ">
+      <header className="header">
         <Header />
       </header>
       <main className="main w-[100%] bg-black">

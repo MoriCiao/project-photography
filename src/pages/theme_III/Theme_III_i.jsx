@@ -3,26 +3,26 @@ import ContainerBg from "../../components/containerBg";
 
 const Theme_III_i = () => {
   return (
-    <section className="theme_III_item theme_III_i sm:!p-16 !p-4">
-      <div className="absolute z-0 rounded-3xl xl:top-1/2 md:top-0 top-10 right-0 md:brightness-100 brightness-30 xl:-translate-x-60 xl:-translate-y-1/2 md:-translate-x-0 md:-translate-y-0 overflow-hidden ">
+    <section className="theme_III_item theme_III_i !p-4 sm:!p-16">
+      <div className="absolute top-10 right-0 z-0 overflow-hidden rounded-3xl brightness-30 md:top-0 md:-translate-x-0 md:-translate-y-0 md:brightness-100 xl:top-1/2 xl:-translate-x-60 xl:-translate-y-1/2">
         <ContainerBg
           src={"/project-photography/theme_III_i.webp"}
           alt={"theme_II背景"}
-          className={"theme-bg w-[100%] rounded-3xl "}
+          className={"theme-bg w-[100%] rounded-3xl"}
         />
       </div>
-      <blockquote className="absolute z-1 xl:right-60 xl:translate-x-0 right-1/2 translate-x-1/2 md:text-start text-center  md:w-auto w-full sm:bottom-40 bottom-5 xl:scale-110">
+      <blockquote className="absolute right-1/2 bottom-5 z-1 w-full translate-x-1/2 text-center sm:bottom-40 md:w-auto md:text-start xl:right-60 xl:translate-x-0 xl:scale-110">
         <p>“When words become unclear, I shall focus with photographs.”</p>
-        <p className="md:text-end  text-center">
+        <p className="text-center md:text-end">
           當言語變得模糊時，我將用照片對焦。
         </p>
-        <footer className="md:text-end  text-center">
+        <footer className="text-center md:text-end">
           {" "}
           — <cite> Ansel Adams</cite>
         </footer>
       </blockquote>
 
-      <div className=" relative z-1 flex flex-col gap-4">
+      <div className="relative z-1 flex flex-col gap-4">
         <h1>
           Focus Modes <span className="text-[1.25rem]">（對焦模式）</span>
         </h1>

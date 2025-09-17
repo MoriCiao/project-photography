@@ -19,7 +19,7 @@ const Theme_V_iii = ({
         src={"/project-photography/theme_V-item-bg.webp"}
         alt={"theme_V背景"}
         className={
-          "absolute -z-0 top-0 left-0 w-full h-[100%] object-cover brightness-60 blur-[2px] "
+          "absolute top-0 left-0 -z-0 h-[100%] w-full object-cover blur-[2px] brightness-60"
         }
       />
 
@@ -29,8 +29,8 @@ const Theme_V_iii = ({
       ></span>
       {/* 常見焦段分類與特色 */}
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full xl:h-full h-auto ">
-        <div className="theme_V-text theme_context flex flex-col gap-4 h-auto">
+      <div className="grid h-auto w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:h-full">
+        <div className="theme_V-text theme_context flex h-auto flex-col gap-4">
           <h3>常見焦段分類與特色</h3>
           <div className={` ${animate}`}>
             <table className={style.table}>
@@ -85,21 +85,21 @@ const Theme_V_iii = ({
         </div>
 
         <div
-          className={`relative z-2 p-0 grid grid-cols-2  gap-4 w-full items-center justify-center transition-all duration-800 ${
-            isToggle.theme_V_iii ? "h-auto  opacity-100" : "h-0 opacity-0"
+          className={`relative z-2 grid w-full grid-cols-2 items-center justify-center gap-4 p-0 transition-all duration-800 ${
+            isToggle.theme_V_iii ? "h-auto opacity-100" : "h-0 opacity-0"
           }`}
         >
-          <div className="rounded-full xl:w-60 xl:h-60 sm:w-40 sm:h-40 w-30 h-30 border-2 border-white/50 shadow-[10px_10px_10px_black] overflow-hidden m-auto ">
+          <div className="m-auto h-30 w-30 overflow-hidden rounded-full border-2 border-white/50 shadow-[10px_10px_10px_black] sm:h-40 sm:w-40 xl:h-60 xl:w-60">
             <img src="/project-photography/theme_V_iv-p1.webp" alt="" />
           </div>
 
-          <div className="rounded-full xl:w-60 xl:h-60 sm:w-40 sm:h-40 w-30 h-30 border-2 border-white/50 shadow-[10px_10px_10px_black] overflow-hidden m-auto">
+          <div className="m-auto h-30 w-30 overflow-hidden rounded-full border-2 border-white/50 shadow-[10px_10px_10px_black] sm:h-40 sm:w-40 xl:h-60 xl:w-60">
             <img src="/project-photography/theme_V_iv-p2.webp" alt="" />
           </div>
-          <div className="rounded-full xl:w-60 xl:h-60 sm:w-40 sm:h-40 w-30 h-30 border-2 border-white/50 shadow-[10px_10px_10px_black] overflow-hidden m-auto">
+          <div className="m-auto h-30 w-30 overflow-hidden rounded-full border-2 border-white/50 shadow-[10px_10px_10px_black] sm:h-40 sm:w-40 xl:h-60 xl:w-60">
             <img src="/project-photography/theme_V_iv-p3.webp" alt="" />
           </div>
-          <div className="rounded-full xl:w-60 xl:h-60 sm:w-40 sm:h-40 w-30 h-30 border-2 border-white/50 shadow-[10px_10px_10px_black] overflow-hidden m-auto">
+          <div className="m-auto h-30 w-30 overflow-hidden rounded-full border-2 border-white/50 shadow-[10px_10px_10px_black] sm:h-40 sm:w-40 xl:h-60 xl:w-60">
             <img src="/project-photography/theme_V_iv-p4.webp" alt="" />
           </div>
         </div>
