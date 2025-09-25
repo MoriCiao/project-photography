@@ -6,7 +6,7 @@ const Theme_I_ii = ({ isToggle, setIsToggle }) => {
     <section
       className={`${
         isToggle.name === "shutter" && isToggle.shutter === true
-          ? "toggle xla:translate-x-150 lg:translate-x-90"
+          ? "toggle lg:translate-x-90 xl:translate-x-150"
           : "not-toggle"
       } shutter flex flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border border-4 border-yellow-500/50 bg-gradient-to-br from-[#232526] to-[#414345] p-8 text-start text-black text-white lg:h-full`}
       onClick={() =>
